@@ -1,5 +1,6 @@
 
 .swiper-slide {
+  display: block;
 
   @media (max-width: $mobile) {
     flex-basis: 353px;

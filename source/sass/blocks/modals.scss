@@ -31,7 +31,7 @@
 .modals__content {
   background-color: $white;
   max-width: 1228px;
-  padding: 30px;
+  padding: 40px;
   position: relative;
   opacity: 0;
   transition: all 0.3s ease 0s;
@@ -67,7 +67,9 @@
 }
 
 .modals__block {
-  max-width: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
 
   h5 {
     font-family: $body-font-family;
@@ -75,24 +77,39 @@
     font-size: 18px;
     margin: 0;
     margin-bottom: 25px;
-    max-width: 700px;
+    max-width: 440px;
+    letter-spacing: -0.06em;
+    margin-bottom: 10px;
+
+    @media (max-width: $tablet) {
+      min-width: 100%;
+    }
   }
 
   p {
+    font-family: $body-font-family;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.07em;
     margin: 0;
     margin-bottom: 30px;
-    max-width: 700px;
+    max-width: 440px;
+
+    @media (max-width: $tablet) {
+      min-width: 100%;
+    }
   }
 
   @media (max-width: $tablet) {
-    max-width: 610px;
+    width: 100%;
   }
 }
 
 .modals__btn {
   align-self: center;
-  padding: 10px 30px;
-  font-size: 14px;
+  padding: 20px 30px;
+  font-size: 20px;
   font-weight: bold;
   color: $white;
   text-decoration: none;
@@ -101,6 +118,7 @@
   border-radius: 10px;
   transition: background-color .3s;
   width: 100%;
+  text-align: center;
 
   cursor: pointer;
 
@@ -127,8 +145,8 @@
     position: absolute;
     width: 150px;
     height: 10px;
-    top: -23px;
-    left: 5px;
+    top: -26px;
+    left: -5px;
     font-family: $body-font-family;
     font-size: 10px;
     font-weight: bold;
@@ -139,6 +157,8 @@
   display: flex;
 
   span {
+    font-weight: bold;
+    font-size: 14px;
     align-self: center;
   }
 }
@@ -165,8 +185,8 @@
     position: absolute;
     width: 150px;
     height: 10px;
-    top: -23px;
-    left: 5px;
+    top: -26px;
+    left: -5px;
     font-family: $body-font-family;
     font-size: 10px;
     font-weight: bold;
@@ -174,12 +194,14 @@
 }
 
 .modals__coupon-box {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 
   span {
+    font-size: 20px;
+    font-weight: bold;
     margin-right: 150px;
   }
 }
@@ -202,7 +224,7 @@
   display: flex;
   flex-wrap: wrap;
   grid-auto-columns: repeat(auto-fit, 93px);
-  column-gap: 18px;
+  column-gap: 16px;
   row-gap: 63px;
   max-height: 420px;
   overflow-y: auto;
@@ -211,11 +233,13 @@
     -webkit-appearance: none;
     max-height: 10px;
     width: 11px;
+    margin-left: 20px;
   }
 
   &::-webkit-scrollbar-track {
     background-color: $black;
     width: 2px;
+    margin-left: 20px;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -257,5 +281,15 @@
     background-image: url("../img/checkmark.svg");
     background-repeat: no-repeat;
   }
+}
+
+.modals__wrapper {
+  h5 {
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 250px;
+  }
+
+  margin-right: 5px;
 }
 

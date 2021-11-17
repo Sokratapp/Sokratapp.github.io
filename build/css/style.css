@@ -1197,7 +1197,7 @@ img {
 .modals__content {
   background-color: #ffffff;
   max-width: 1228px;
-  padding: 30px;
+  padding: 40px;
   position: relative;
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -1238,27 +1238,47 @@ img {
       margin-right: 0; } }
 
 .modals__block {
-  max-width: 500px; }
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .modals__block h5 {
     font-family: "Gotham pro", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     margin: 0;
     margin-bottom: 25px;
-    max-width: 700px; }
+    max-width: 440px;
+    letter-spacing: -0.06em;
+    margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .modals__block h5 {
+        min-width: 100%; } }
   .modals__block p {
+    font-family: "Gotham pro", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.07em;
     margin: 0;
     margin-bottom: 30px;
-    max-width: 700px; }
+    max-width: 440px; }
+    @media (max-width: 1024px) {
+      .modals__block p {
+        min-width: 100%; } }
   @media (max-width: 1024px) {
     .modals__block {
-      max-width: 610px; } }
+      width: 100%; } }
 
 .modals__btn {
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 10px 30px;
-  font-size: 14px;
+  padding: 20px 30px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
@@ -1268,6 +1288,7 @@ img {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   width: 100%;
+  text-align: center;
   cursor: pointer; }
   .modals__btn:focus, .modals__btn:hover {
     background-color: #007e9c; }
@@ -1288,8 +1309,8 @@ img {
     position: absolute;
     width: 150px;
     height: 10px;
-    top: -23px;
-    left: 5px;
+    top: -26px;
+    left: -5px;
     font-family: "Gotham pro", "Arial", sans-serif;
     font-size: 10px;
     font-weight: bold; }
@@ -1299,6 +1320,8 @@ img {
   display: -ms-flexbox;
   display: flex; }
   .modals__img-box span {
+    font-weight: bold;
+    font-size: 14px;
     -ms-flex-item-align: center;
         align-self: center; }
 
@@ -1323,22 +1346,24 @@ img {
     position: absolute;
     width: 150px;
     height: 10px;
-    top: -23px;
-    left: 5px;
+    top: -26px;
+    left: -5px;
     font-family: "Gotham pro", "Arial", sans-serif;
     font-size: 10px;
     font-weight: bold; }
 
 .modals__coupon-box {
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  margin-left: auto; }
   .modals__coupon-box span {
+    font-size: 20px;
+    font-weight: bold;
     margin-right: 150px; }
 
 .modals__close {
@@ -1362,19 +1387,21 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   grid-auto-columns: repeat(auto-fit, 93px);
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
   row-gap: 63px;
   max-height: 420px;
   overflow-y: auto; }
   .modals__list::-webkit-scrollbar {
     -webkit-appearance: none;
     max-height: 10px;
-    width: 11px; }
+    width: 11px;
+    margin-left: 20px; }
   .modals__list::-webkit-scrollbar-track {
     background-color: #24272D;
-    width: 2px; }
+    width: 2px;
+    margin-left: 20px; }
   .modals__list::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #62bacd;
@@ -1407,6 +1434,13 @@ img {
     right: 5px;
     background-image: url("../img/checkmark.svg");
     background-repeat: no-repeat; }
+
+.modals__wrapper {
+  margin-right: 5px; }
+  .modals__wrapper h5 {
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 250px; }
 
 .socials {
   margin-top: 30px; }
@@ -1993,16 +2027,18 @@ img {
   .teacher__link:hover, .teacher__link:focus {
     color: #00A7CF; }
 
-@media (max-width: 768px) {
-  .swiper-slide {
-    -ms-flex-preferred-size: 353px;
-        flex-basis: 353px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    min-height: 341px;
-    margin-right: 20px; } }
+.swiper-slide {
+  display: block; }
+  @media (max-width: 768px) {
+    .swiper-slide {
+      -ms-flex-preferred-size: 353px;
+          flex-basis: 353px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      min-height: 341px;
+      margin-right: 20px; } }
 
 .swiper-wrapper {
   display: -webkit-box;
