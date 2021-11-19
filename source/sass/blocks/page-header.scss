@@ -14,11 +14,20 @@
 .page-header__logo {
   width: auto;
   height: 115px;
+  margin-bottom: 40px;
+
+  @media (max-width: $mobile) {
+    height: 66px;
+    margin-bottom: 34px;
+  }
 }
 
 
 .page-header__course-img {
-  margin-top: 40px;
   width: auto;
   height: 390px;
+
+  @media (max-width: $mobile) {
+    height: 201px;
+  }
 }

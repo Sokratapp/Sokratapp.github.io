@@ -1,12 +1,5 @@
 .socials {
   margin-top: 30px;
-
-  @media (max-width: $mobile) {
-    position: absolute;
-    bottom: -169px;
-    left:50%;
-    transform: translate(-50%, 0)
-  }
 }
 
 .socials__title {
@@ -23,6 +16,10 @@
   display: flex;
 
   @include list-reset;
+
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
 }
 
 .socials__item {

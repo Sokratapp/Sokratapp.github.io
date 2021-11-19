@@ -1,19 +1,28 @@
-.teacher {
-  margin-top: 95px;
-}
-
 .teacher__title {
+  margin-top: 0;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 9px;
+    padding-top: 8px;
+    border-top: 0.1px solid $black;
+
+    font-size: 10px;
+    line-height: 9px;
+  }
 }
 
 .teacher__list {
   display: flex;
-  justify-content: space-between;
 
   @include list-reset;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .teacher__item {
@@ -21,14 +30,33 @@
   padding: 10px 10px 20px 10px;
   border-radius: 10px;
   box-shadow: 0 0 16px rgba($color: #000000, $alpha: 0.1);
+
+  @media (max-width: $mobile) {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
 }
 
 .teacher__img-link {
+  display: block;
   text-decoration: none;
+
+  @media (max-width: $mobile) {
+    margin-right: 10px;
+  }
 }
 
 .teacher__img {
   border-radius: 10px;
+
+  @media (max-width: $mobile) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .teacher__link {
@@ -42,5 +70,10 @@
   &:hover,
   &:focus {
     color: $main-color;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
