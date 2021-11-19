@@ -6,14 +6,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 
 .download__title {
   font-size: 15px;
   line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
 }
 
 .download__btn-link {
