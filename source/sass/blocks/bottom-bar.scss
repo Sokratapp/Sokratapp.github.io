@@ -1,5 +1,4 @@
 .bottom-bar {
-  margin-top: 50px;
   background-color: $black;
   color: #fff;
 
@@ -14,9 +13,13 @@
 .bottom-bar__wrapper {
   display: flex;
   justify-content: space-between;
+
   max-width: 1460px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   @media (max-width: $mobile) {
     flex-direction: column;
@@ -68,6 +71,9 @@
 }
 
 .bottom-bar__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 13px;
   line-height: 1.2;
 
