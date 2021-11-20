@@ -7,11 +7,20 @@
 }
 
 .practice__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 35%;
+  grid-template-areas:
+    "info  sidebar"
+    "hard  sidebar"
+    "hard  invite"
+    "hard  ."
+    "soft  .";
+  column-gap: 105px;
 
   max-width: 1460px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+
   padding: 0 20px;
 
   @media (max-width: $tablet) {
@@ -19,8 +28,14 @@
   }
 
   @media (max-width: $mobile) {
-    flex-wrap: wrap;
-  }
+    margin-bottom: 20px;
+
+    grid-template-areas:
+      "info     ."
+      "sidebar  sidebar"
+      "hard     hard"
+      "soft     soft"
+      "invite   invite";
 }
 
 .practice__title {
@@ -110,128 +125,17 @@
   }
 }
 
+.practice__hard {
+  grid-area: hard;
+  margin-bottom: 67px;
+}
+
+.practice__soft {
+  grid-area: soft;
+}
+
 .practice__sidebar {
   grid-area: sidebar;
-  width: 100%;
-}
-
-.practice__teacher {
-  grid-area: teacher;
-
-  margin-bottom: 48px;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 10px;
-  }
-}
-
-.practice__programm {
-  grid-area: programm;
-}
-
-.practice__programm-title {
-  margin-top: 0;
-  margin-bottom: 26px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.2;
-
-  @media (max-width: $mobile) {
-    padding-top: 18px;
-    margin-bottom: 19px;
-    border-top: 1px solid $black;
-
-    font-size: 15px;
-    line-height: 20px;
-  }
-}
-
-.practice__programm-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @include list-reset;
-
-  @media (max-width: $mobile) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
-.practice__programm__item {
-  display: flex;
-  justify-content: space-between;
-  width: 49%;
-  margin-bottom: 15px;
-  padding: 12px 30px 12px 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 16px rgba(#000000, 0.1);
-
-  @media (max-width: $mobile) {
-    align-items: center;
-
-    width: 100%;
-    margin-bottom: 10px;
-    padding-top: 14px;
-    padding-right: 21px;
-    padding-bottom: 14px;
-    padding-left: 10px;
-  }
-}
-
-.practice__lesson-title {
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.2;
-
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    line-height: 14px;
-  }
-}
-
-.practice__lesson-duration {
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: $main-color;
-
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    line-height: 17px;
-  }
-}
-
-.practice__sidebar-title {
-  margin-top: 0;
-  margin-bottom: 17px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.2;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 9px;
-    padding-top: 8px;
-    border-top: 1px solid $black;
-
-    font-size: 10px;
-    line-height: 9px;
-  }
-}
-
-.practice__sidebar-title--big {
-  @media (max-width: $mobile) {
-    margin-bottom: 19px;
-    padding-top: 18px;
-
-    font-size: 15px;
-    line-height: 20px;
-  }
 }
 
 .practice__partner {
@@ -295,18 +199,20 @@
 
 .practice__details-item {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 20px;
   padding: 10px 20px 10px 85px;
-  border-radius: 10px;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
+  border-radius: 10px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: calc(50% - 32px);
     left: 10px;
     width: 64px;
     height: 64px;
@@ -320,8 +226,18 @@
     background-image: url("../../img/play-icon.svg");
   }
 
+  @media (max-width: 1220px) {
+    flex-direction: column;
+
+    min-height: 84px;
+  }
+
   @media (max-width: $mobile) {
+    flex-direction: row;
+
     &::before {
+      top: calc(50% - 22px);
+
       width: 44px;
       height: 44px;
     }
@@ -335,6 +251,10 @@
   font-weight: bold;
   line-height: 1.2;
 
+  @media (max-width: 1220px) {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 
   @media (max-width: $mobile) {
     margin-top: 0;
@@ -344,11 +264,17 @@
     line-height: 19px;
   }
 }
+
 .practice__details-info {
   font-size: 19px;
   font-weight: bold;
   line-height: 1.2;
   color: $main-color;
+
+  @media (max-width: 1220px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   @media (max-width: $mobile) {
     margin-top: 0;
@@ -359,26 +285,8 @@
   }
 }
 
-.practice__certificate {
-  grid-area: certificate;
-}
-
-.practice__certificate__img-link {
-  display: block;
-  text-decoration: none;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 20px;
-  }
-}
-
-.practice__certificate-img {
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(#000000, 0.16);
-}
-
-.practice__payment {
-  grid-area: payment;
+.practice__invite {
+  grid-area: invite;
   margin-bottom: 15px;
 
   @media (max-width: $mobile) {
@@ -388,37 +296,7 @@
   }
 }
 
-.practice__btn {
-  display: none;
-  padding: 25px;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.3;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: $main-color;
-  border-radius: 10px;
-  box-shadow: 0 3px 4px rgba(#000000, 0.16);
-  transition: background-color .3s, box-shadow .3s;
-
-  &:focus,
-  &:hover {
-    background-color: darken($main-color, 10);
-    box-shadow: none;
-  }
-
-  @media (max-width: $mobile) {
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 12px;
-
-    font-size: 13px;
-    line-height: 17px;
-  }
-}
-
-.practice__payment-btn {
+.practice__invite-btn {
   display: block;
   padding: 25px;
   font-size: 21px;
@@ -439,9 +317,10 @@
   }
 
   @media (max-width: $mobile) {
-    display: none;
     padding-top: 8px;
     padding-bottom: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
 
     font-size: 13px;
     line-height: 17px;
