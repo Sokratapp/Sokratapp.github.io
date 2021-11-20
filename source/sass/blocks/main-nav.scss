@@ -16,6 +16,19 @@
   }
 }
 
+.main-nav__container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+  @media (max-width: $mobile) {
+  position: relative;
+  width: auto;
+  margin-bottom: 0;
+  padding: 0;
+  }
+}
+
 .main-nav__list {
   display: flex;
 
