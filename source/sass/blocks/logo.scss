@@ -26,15 +26,9 @@
 }
 
 .logo--closed .logo__link--header {
+  display: block;
 
   @media (max-width: $mobile) {
     display: none;
-  }
-}
-
-.logo--footer {
-  @media (max-width: $mobile) {
-    display: block;
-    margin-bottom: 19px;
   }
 }

@@ -1,7 +1,5 @@
 
 .download {
-  margin-top: 40px;
-
   @media (max-width: $mobile) {
     display: flex;
     flex-direction: column;
@@ -11,13 +9,11 @@
 }
 
 .download__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+
   font-size: 15px;
   line-height: 1.2;
-
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    margin-bottom: 9px;
-  }
 }
 
 .download__btn-link {
