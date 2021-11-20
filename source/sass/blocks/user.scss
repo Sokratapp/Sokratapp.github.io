@@ -21,6 +21,10 @@
   position: relative;
   margin-right: 30px;
 
+  @media (max-width: $tablet) {
+    margin-right: 10px;
+  }
+
   @media (max-width: $mobile) {
       display: none;
     }
@@ -28,6 +32,10 @@
 
 .user__photo {
   margin-left: 30px;
+
+  @media (max-width: $tablet) {
+    margin-left: 10px;
+  }
 
   @media (max-width: $mobile) {
   order: -1;
@@ -37,8 +45,8 @@
 }
 
 .user__bookmark-img {
-  width: 16px;
-  height: 21px;
+  width: 31px;
+  height: 20px;
 }
 
 .user__photo-img {
@@ -84,6 +92,10 @@
   @media (max-width: $mobile) {
     font-size: 11px;
   }
+}
+
+.user__login {
+  width: max-content;
 }
 
 .user__login--closed p {

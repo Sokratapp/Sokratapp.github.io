@@ -27,3 +27,12 @@
     }
   }
 }
+
+.btn--disabled {
+  opacity: 0.5;
+
+  &:focus,
+  &:hover {
+    background-color: $main-color;
+  }
+}

@@ -1,3 +1,9 @@
+.logo {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
 .logo__img {
   width: 157px;
   height: 36px;
@@ -20,14 +26,9 @@
 }
 
 .logo--closed .logo__link--header {
+  display: block;
 
   @media (max-width: $mobile) {
     display: none;
-  }
-}
-
-.logo--footer {
-  @media (max-width: $mobile) {
-    margin-bottom: 41px;
   }
 }
