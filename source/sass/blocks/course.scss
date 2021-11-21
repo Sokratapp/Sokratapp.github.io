@@ -12,7 +12,8 @@
     "info      sidebar"
     "teacher   certificate"
     "programm  certificate"
-    "programm  payment";
+    "programm  payment"
+    "review    review";
   column-gap: 153px;
 
   max-width: 1460px;
@@ -30,7 +31,10 @@
       "teacher      teacher"
       "programm     programm"
       "certificate  certificate"
-      "payment      payment";
+      "payment      payment"
+      "review    review";
+
+    margin-bottom: 18px;
   }
 }
 
@@ -427,4 +431,8 @@
     font-size: 13px;
     line-height: 17px;
   }
+}
+
+.course__review {
+  grid-area: review;
 }
