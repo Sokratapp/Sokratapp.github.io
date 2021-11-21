@@ -36,6 +36,7 @@
       "hard     hard"
       "soft     soft"
       "invite   invite";
+  }
 }
 
 .practice__title {
@@ -222,6 +223,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--format::before {
     background-image: url("../../img/play-icon.svg");
   }
@@ -326,3 +328,4 @@
     line-height: 17px;
   }
 }
+
