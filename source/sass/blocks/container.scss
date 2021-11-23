@@ -1,4 +1,17 @@
 
+.container {
+  max-width: 1472px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (max-width: $mobile) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .container__wrapper {
   display: flex;
   justify-content: space-between;
