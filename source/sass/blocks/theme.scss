@@ -197,7 +197,7 @@
 }
 
 .theme__category {
-  min-width: 375px;
+  max-width: 375px;
   height: fit-content;
   padding-top: 17px;
   padding-right: 25px;
@@ -208,6 +208,7 @@
   box-shadow: 0 0 16px rgba($black, 0.2);
 
   @media (max-width: $mobile) {
+    display: none;
     margin-bottom: 52px;
     padding: 0;
     box-shadow: none;
@@ -235,7 +236,7 @@
 
 .theme__category-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 99px);
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 19px;
   column-gap: 12px;
 
