@@ -7,9 +7,12 @@
 }
 
 .practice__wrapper {
-  display: flex;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template-areas:
+    "info      sidebar"
+    "skills-hard    sidebar"
+    "skills-hard    payment"
+    "skills-soft .";
   max-width: 1460px;
   margin: 0 auto;
   padding: 0 20px;
@@ -19,25 +22,43 @@
   }
 
   @media (max-width: $mobile) {
-    flex-wrap: wrap;
+    grid-template-areas:
+    "info         ."
+    "sidebar      sidebar"
+    "skills-hard   skills-hard"
+    "skills-soft   skills-soft"
+    "payment      payment";
+  }
+}
+
+.practice__skills-hard {
+  grid-area: skills-hard;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.practice__skills-soft {
+  grid-area: skills-soft;
+
+  @media (max-width: $mobile) {
+    width: 100%;
   }
 }
 
 .practice__title {
   margin-top: 0;
   margin-bottom: 24px;
-
   font-size: 27px;
   font-weight: bold;
   line-height: 1.2;
 
   @media (max-width: $mobile) {
     grid-area: title;
-
     margin-bottom: 7px;
     padding-top: 18px;
     border-top: 1px solid $black;
-
     font-size: 18px;
     line-height: 24px;
   }
@@ -46,7 +67,6 @@
 .practice__price {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 24px;
   line-height: 1.2;
   color: #BAC0C5;

@@ -70,7 +70,6 @@
   </div>
 
   <header class="header">
-
     <div class="top-bar">
       <p class="top-bar__content">
         Ищите знания<br>
@@ -81,9 +80,9 @@
     </div>
 
     <div class="header__wrapper">
-      <div class="header__inner-wrapper">
+      <div class="header__inner-wrapper header__inner-wrapper--closed">
         <div class="logo">
-          <a href="#" class="logo__link">
+          <a href="#" class="logo__link logo__link--header">
             <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img" width="157" height="36">
           </a>
         </div>
@@ -99,10 +98,10 @@
         <div class="user">
           <div class="user__bookmark">
             <img src="img/bookmark-icon.svg" alt="" class="user__bookmark-img" width="16" height="21">
-            <span class="user__bookmark-indicator"></span>
+            <span class="user__bookmark-indicator indicator"></span>
           </div>
           <div class="user__login">
-            <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
+            <p class="user__greeting">Привет, <span class="user__name">Друг!</span></p>
             <p class="user__text">Что нового узнаем сегодня?</p>
           </div>
           <div class="user__photo">
@@ -112,25 +111,46 @@
       </div>
     </div>
 
-    <div class="main-nav">
-      <nav class="main-nav__container">
+    <div class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
+      </button>
+      <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--active">Все курсы</a>
+            <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Все курсы</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Все практики</a>
           </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--mobile">Избранное</a>
+          </li>
         </ul>
       </nav>
+      <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
-
   </header>
 
   <main class="main">
-
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__plug-img">
+        <button class="page-header__add-list">
+          <svg class="page-header__list-img" xmlns="http://www.w3.org/2000/svg" width="34.859" height="23" viewBox="0 0 34.859 23" alt="">
+            <g id="Group_8966" data-name="Group 8966" transform="translate(-1554 -217)">
+              <line id="Line_164" data-name="Line 164" x1="31.859" transform="translate(1555.5 218.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_165" data-name="Line 165" x1="15.93" transform="translate(1555.5 228.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              <g id="Group_8961" data-name="Group 8961" transform="translate(1576.615 228.5)">
+                <line id="Line_167" data-name="Line 167" x1="10.744" transform="translate(0 5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+                <line id="Line_168" data-name="Line 168" x1="10" transform="translate(5.372 0) rotate(90)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              </g>
+              <line id="Line_166" data-name="Line 166" x1="12.39" transform="translate(1555.5 238.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+            </g>
+          </svg>
+        </button>
         <img src="img/page-header-logo.png" alt="Начни учиться в Sokrart." class="page-header__logo">
         <img src="img/page-course-img.svg" alt="" class="page-header__course-img">
       </div>
@@ -150,76 +170,69 @@
           <div class="practice__payment">
             <a href="#" class="practice__btn">Хочу на практику</a>
           </div>
-          <div class="skills">
-            <p>Hard Skills</p>
-            <ul class="skills__list">
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-            </ul>
-            <p>Soft Skills</p>
-            <ul class="skills__list">
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">CSS</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">HTML</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-              <li class="skills__item"><a href="#">GitHub</a></li>
-            </ul>
-          </div>
+        </div>
+
+        <div class="practice__skills-hard skills">
+          <p>Hard Skills</p>
+          <ul class="skills__list">
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="practice__skills-soft skills">
+          <p>Soft Skills</p>
+          <ul class="skills__list">
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">CSS</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">HTML</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+            <li class="skills__item"><a href="#">GitHub</a></li>
+          </ul>
         </div>
 
         <div class="practice__sidebar">
-
           <p class="practice__sidebar-title">Партнер</p>
-
           <div class="practice__partner">
             <a href="#" class="practice__partner-img-link">
               <img src="img/course-partner-logo@2x.png" alt="Государственный университет
               управления" class="practice__partner-img">
             </a>
-
             <p class="practice__partner-title">
               <a href="#" class="practice__partner-link">KRON
               </a>
             </p>
           </div>
-
           <div class="practice__details">
             <p class="practice__sidebar-title">Детали стажировки</p>
-
             <ul class="practice__details-list">
               <li class="practice__details-item course__details-item--duration">
                 <p class="practice__details-title">Продолжительность</p>
                 <p class="practice__details-info">1-3 месяца</p>
               </li>
-
               <li class="practice__details-item course__details-item--format">
                 <p class="practice__details-title">Тип стажировки</p>
                 <p class="practice__details-info">Удаленная</p>
               </li>
-
               <li class="practice__details-item course__details-item--schedule">
                 <p class="practice__details-title">Тип стажировки</p>
                 <p class="practice__details-info">Свободная</p>
               </li>
-
             </ul>
-
           </div>
-
-          <div class="practice__payment">
-            <a href="#" class="practice__payment-btn">Хочу устроиться</a>
-          </div>
+        </div>
+        <div class="practice__payment">
+          <a href="#" class="practice__payment-btn">Хочу устроиться</a>
         </div>
       </div>
     </div>
