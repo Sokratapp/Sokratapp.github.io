@@ -111,17 +111,27 @@
       </div>
     </div>
 
-    <div class="main-nav">
+    <div class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
+      </button>
       <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--active">Все курсы</a>
+            <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Все курсы</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Все практики</a>
           </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--mobile">Избранное</a>
+          </li>
         </ul>
       </nav>
+      <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
 
   </header>
@@ -278,6 +288,47 @@
         </div>
         <div class="course__payment">
           <a href="#" class="course__payment-btn">Оплатить обучение</a>
+        </div>
+        <div class="course__review review">
+          <h2 class="review__title">
+            Ваши отзывы
+            <span class="review__stats">(143 отзыва)</span>
+          </h2>
+          <ul class="review__list">
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -464,6 +515,13 @@
               <svg class="socials__icon socials__icon--vk" width="31" height="31">
                 <use xlink:href="#icon-vk"></use>
               </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Яндекс Дзен</span>
+            <a href="#" class="socials__link">
+              <img src="img/yandex-zen-icon.svg" alt="ссылка на Яндекс Дзен"
+                class="socials__icon socials__icon--yandex-zen" width="31" height="31">
             </a>
           </li>
         </ul>

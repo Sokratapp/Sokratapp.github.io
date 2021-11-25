@@ -134,7 +134,6 @@
       <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
   </header>
-
   <main class="main">
     <header class="page-header">
       <div class="page-header__plug-img">
@@ -160,7 +159,7 @@
       <div class="practice__wrapper">
         <div class="practice__info">
           <h1 class="practice__title">Frontend Developer</h1>
-          <p class="practice__price">Оплата<span>10 000 ₽/мес.</span></p>
+          <p class="practice__price">Оплата: <span>10 000 ₽/мес.</span></p>
           <p class="practice__description">
             Курс General Management программы MBA предназначен для подготовки
             элитных руководителей, которые владеют фундаментальными знаниями
@@ -200,23 +199,22 @@
             <li class="skills__item"><a href="#">GitHub</a></li>
           </ul>
         </div>
-
         <div class="practice__sidebar">
           <p class="practice__sidebar-title">Партнер</p>
+
           <div class="practice__partner">
             <a href="#" class="practice__partner-img-link">
               <img src="img/course-partner-logo@2x.png" alt="Государственный университет
               управления" class="practice__partner-img">
             </a>
             <p class="practice__partner-title">
-              <a href="#" class="practice__partner-link">KRON
-              </a>
+              <a href="#" class="practice__partner-link">KRON</a>
             </p>
           </div>
           <div class="practice__details">
             <p class="practice__sidebar-title">Детали стажировки</p>
             <ul class="practice__details-list">
-              <li class="practice__details-item course__details-item--duration">
+              <li class="practice__details-item practice__details-item--duration">
                 <p class="practice__details-title">Продолжительность</p>
                 <p class="practice__details-info">1-3 месяца</p>
               </li>
@@ -237,10 +235,11 @@
       </div>
     </div>
 
+    <!-- Similar courses  -->
     <section class="carousel carousel--full">
 
       <div class="carousel__wrapper">
-        <h2 class="carousel__title">Если не хватает навыков</h2>
+        <h2 class="carousel__title">Еще курсы по этой теме</h2>
 
         <div class="carousel__list">
 
@@ -297,106 +296,162 @@
         </div>
       </div>
     </section>
+
+    <section class="popup popup--hidden">
+      <form class="popup__form" action="">
+        <h2 class="popup__title">Отклик на вакансию</h2>
+        <button class="popup__close" type="button"></button>
+        <fieldset class="popup__fieldset fieldset">
+          <legend class="fieldset__title">Контактные данные</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="last-name">Ваша фамилия</label>
+              <input class="input__field" type="text" id="last-name" placeholder="Введите вашу фамилию">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="first-name">Введите ваше имя</label>
+              <input class="input__field" type="text" id="first-name" placeholder="Ваше имя">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="patronomic">Введите ваше отчество</label>
+              <input class="input__field" type="text" id="patronomic" placeholder="Ваше отчество">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="phone">Ваш номер телефона</label>
+              <input class="input__field" type="number" id="phone" placeholder="+7 (920) 123 45 67">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="email">Ваш email</label>
+              <input class="input__field" type="email" id="email" placeholder="Введите вашу почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup__fieldset fieldset">
+          <legend class="fieldset__title">Данные о вакансии</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-id">id вакансии</label>
+              <input class="input__field" type="number" id="course-id" value="123456" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-name">Название вакансии</label>
+              <input class="input__field" type="text" id="course-name" value="Философия искусственного интеллекта" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="partner">Партнер вакансии</label>
+              <input class="input__field" type="text" id="partner" value="Skillbox" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup__fieldset fieldset fieldset--pay">
+          <legend class="fieldset__title">Способ оплаты</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input input--pay">
+              <input class="input__field" type="text" value="Оплата с помощью карты" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="popup__info">
+          Нажимая оплатить, вы соглашаетесь
+          с нашей <a class="popup__confidentiality" href="#">Политикой конфиденциальности</a>
+        </p>
+        <button class="popup__button-pay btn btn--disabled" type="submit" disabled>Откликнуться</b></button>
+      </form>
+    </section>
     <!-- Similar courses END-->
 
   </main>
 
   <footer class="footer">
     <div class="footer__wrapper">
-
-      <div class="footer__left-col">
-        <div class="footer__col-wrapper">
-          <div class="footer__nav-wrapper">
-            <p class="footer__nav-title">Пользователям</p>
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Все курсы</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Консультант</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Оплата обучения</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__nav-wrapper">
-            <p class="footer__nav-title">Партнерам</p>
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Как это работает?</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Подключиться</a>
-              </li>
-            </ul>
-          </div>
+      <div class="footer__col-wrapper">
+        <div class="footer__nav-wrapper">
+          <p class="footer__nav-title">Пользователям</p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Все курсы</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Консультант</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Оплата обучения</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="socials">
-          <p class="socials__title">Мы в социальных сетях</p>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <span class="visually-hidden">Ссылка на инстаграм</span>
-              <a href="#" class="socials__link">
-                <svg class="socials__icon socials__icon--instagram" width="31" height="31">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
-              </a>
+        <div class="footer__nav-wrapper">
+          <p class="footer__nav-title">Партнерам</p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Как это работает?</a>
             </li>
-            <li class="socials__item">
-              <span class="visually-hidden">Фейсбук</span>
-              <a href="#" class="socials__link">
-                <svg class="socials__icon socials__icon--facebook" width="31" height="31">
-                  <use xlink:href="#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <span class="visually-hidden">Ссылка на ВКонтакте</span>
-              <a href="#" class="socials__link">
-                <svg class="socials__icon socials__icon--vk" width="31" height="31">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Подключиться</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="footer__right-col">
-        <div class="logo logo--footer">
-          <a href="#" class="logo__link">
-            <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img--footer" width="223" height="51">
+      <div class="footer__socials socials">
+        <p class="socials__title">Мы в социальных сетях</p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на инстаграм</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--instagram" width="31" height="31">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Фейсбук</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--facebook" width="31" height="31">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на ВКонтакте</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--vk" width="31" height="31">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Яндекс Дзен</span>
+            <a href="#" class="socials__link">
+              <img src="img/yandex-zen-icon.svg" alt="ссылка на Яндекс Дзен"
+                class="socials__icon socials__icon--yandex-zen" width="31" height="31">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logo logo logo--footer">
+        <a href="#" class="logo__link">
+          <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img--footer" width="223" height="51">
+        </a>
+        <p class="logo__text">Тысячи знаний внутри</p>
+      </div>
+      <div class="footer__download download">
+        <p class="download__title">Скачай на свой телефон</p>
+        <div class="download__btn-wrapper">
+          <a href="#" class="download__btn-link download__btn-link--appstore">
+            <img src="img/app-store-btn.svg" alt="Скачать с App Store" class="download__btn-appstore-img" width="135"
+              height="45">
           </a>
-
-          <p class="logo__text">Тысячи знаний внутри</p>
-        </div>
-
-        <div class="download">
-          <p class="download__title">Скачай на свой телефон</p>
-          <div class="download__btn-wrapper">
-            <a href="#" class="download__btn-link download__btn-link--appstore">
-              <img src="img/app-store-btn.svg" alt="Скачать с App Store" class="download__btn-appstore-img" width="135"
-                height="45">
-            </a>
-
-            <a href="#" class="download__btn-link download__btn-link--gplay">
-              <img src="img/google-play-btn.svg" alt="Скачать Google Play" class="download__btn-gplay-img" width="152"
-                height="45">
-            </a>
-          </div>
+          <a href="#" class="download__btn-link download__btn-link--gplay">
+            <img src="img/google-play-btn.svg" alt="Скачать Google Play" class="download__btn-gplay-img" width="152"
+              height="45">
+          </a>
         </div>
       </div>
-
-
-
     </div>
     <div class="bottom-bar">
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
-          <li class="bottom-bar__nav-item">
+            <li class="bottom-bar__nav-item">
             <a href="#" class="bottom-bar__nav-link">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
