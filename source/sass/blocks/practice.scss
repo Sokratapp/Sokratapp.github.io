@@ -8,14 +8,12 @@
 
 .practice__wrapper {
   display: grid;
-  grid-template-columns: 1fr 35%;
+
   grid-template-areas:
-    "info  sidebar"
-    "hard  sidebar"
-    "hard  invite"
-    "hard  ."
-    "soft  .";
-  column-gap: 105px;
+    "info      sidebar"
+    "skills-hard    sidebar"
+    "skills-hard    payment"
+    "skills-soft .";
 
   max-width: 1460px;
   margin-right: auto;
@@ -28,32 +26,43 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 20px;
-
     grid-template-areas:
-      "info     ."
-      "sidebar  sidebar"
-      "hard     hard"
-      "soft     soft"
-      "invite   invite";
+    "info         ."
+    "sidebar      sidebar"
+    "skills-hard   skills-hard"
+    "skills-soft   skills-soft"
+    "payment      payment";
+  }
+}
+
+.practice__skills-hard {
+  grid-area: skills-hard;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.practice__skills-soft {
+  grid-area: skills-soft;
+
+  @media (max-width: $mobile) {
+    width: 100%;
   }
 }
 
 .practice__title {
   margin-top: 0;
   margin-bottom: 24px;
-
   font-size: 27px;
   font-weight: bold;
   line-height: 1.2;
 
   @media (max-width: $mobile) {
     grid-area: title;
-
     margin-bottom: 7px;
     padding-top: 18px;
     border-top: 1px solid $black;
-
     font-size: 18px;
     line-height: 24px;
   }
@@ -62,7 +71,6 @@
 .practice__price {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 24px;
   line-height: 1.2;
   color: #BAC0C5;
