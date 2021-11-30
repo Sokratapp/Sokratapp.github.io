@@ -15,18 +15,33 @@
 
 .skills__list {
   @include list-reset;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 .skills__item {
-  display: flex;
-  width: 32%;
+  display: block;
+  padding: 25px 15px;
+
+  text-decoration: none;
+  font-family: $body-font-family;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
   border-radius: 10px;
   border: 1px solid $main-color;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
-  margin-bottom: 15px;
   justify-content: space-between;
   position: relative;
 
@@ -40,14 +55,20 @@
     background-image: url("../img/favicon/checkmark.svg");
   }
 
-  a {
-    display: block;
-    padding: 25px 15px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: $body-font-family;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
+  @media (max-width: $mobile) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &::after {
+      top: calc(50% - 8px);
+      right: 8px;
+
+      width: 16px;
+      height: 16px;
+
+      background-size: cover;
+    }
   }
 }
