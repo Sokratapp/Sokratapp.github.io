@@ -156,7 +156,7 @@
     </header>
 
     <div class="theme container">
-      <div class="theme__category category">
+      <div class="theme__category category category--mobile-hide">
         <h2 class="category__title">Категории</h2>
         <ul class="category__list">
           <li class="category__item">
@@ -191,92 +191,98 @@
           </li>
         </ul>
       </div>
-        <div class="course-all__block">
-          <form action="">
-            <input class="course-all__search" type="search" placeholder="Поиск по курсам">
-            <div class="course-all__button-box">
-              <button class="course-all__btn-options" type="button">
-                <img src="img/favicon/settings.svg" alt="">
-              </button>
-              <button class="course-all__btn-frontend" type="button">Frontend</button>
-              <button class="course-all__btn-backend" type="button">Backend</button>
-            </div>
-          </form>
-          <div class="course-all__list">
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
-
-            <div class="course-all__item">
-              <a href="#" class="course-all__img-link">
-                <img src="img/slider-placeholder.jpg" alt="" class="course-all__img">
-                <div class="course-all__item-info">
-                  <p class="course-all__item-price">700 000 ₽</p>
-                  <p class="course-all__item-duration">23 месяца</p>
-                </div>
-                <p class="course-all__item-title">Философия искусственного интеллекта</p>
-              </a>
-              <a href="#" class="course-all__item-btn">Подробнее</a>
-            </div>
+      <div class="course-all__block">
+        <form action="">
+          <input class="course-all__search" type="search" placeholder="Поиск по курсам">
+          <div class="course-all__button-box">
+            <button class="course-all__btn-options" type="button">
+              <img src="img/favicon/settings.svg" alt="">
+            </button>
+            <button class="course-all__btn-frontend" type="button">Frontend</button>
+            <button class="course-all__btn-backend" type="button">Backend</button>
           </div>
-        </div>
+        </form>
+        <ul class="theme__courses courses">
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+          <li class="courses__item">
+            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="courses__price">
+              700 000 ₽
+              <span class="courses__term">
+                23 месяца
+              </span>
+            </p>
+            <p class="courses__title">
+              Философия искусственного интеллекта
+            </p>
+            <a class="courses__link btn" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
 
