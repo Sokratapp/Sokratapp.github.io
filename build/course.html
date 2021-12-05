@@ -61,24 +61,20 @@
   </div>
 
   <header class="header">
-
     <div class="top-bar">
-      <p class="top-bar__content">
-        Ищите знания<br>
-        в приложении Sokrat.
-      </p>
-
-      <a href="#" class="btn btn--pink">Скачать</a>
+      <div class="top-bar__container container">
+        <p class="top-bar__content">
+          Ищите знания<br>
+          в приложении Sokrat.
+        </p>
+        <a href="#" class="btn btn--pink">Скачать</a>
+      </div>
     </div>
-
     <div class="header__wrapper">
       <div class="header__inner-wrapper">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img" width="157" height="36">
-          </a>
-        </div>
-
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
+        </a>
         <div class="search">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
             <label class="visually-hidden" for="search__input">Поиск по курсам</label>
@@ -86,7 +82,6 @@
             <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
           </form>
         </div>
-
         <div class="user">
           <div class="user__bookmark">
             <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
