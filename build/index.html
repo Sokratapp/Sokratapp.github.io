@@ -61,24 +61,20 @@
   </div>
 
   <header class="header">
-
     <div class="top-bar">
-      <p class="top-bar__content">
-        Ищите знания<br>
-        в приложении Sokrat.
-      </p>
-
-      <a href="#" class="btn btn--pink">Скачать</a>
+      <div class="top-bar__container container">
+        <p class="top-bar__content">
+          Ищите знания<br>
+          в приложении Sokrat.
+        </p>
+        <a href="#" class="btn btn--pink">Скачать</a>
+      </div>
     </div>
-
     <div class="header__wrapper">
-      <div class="header__inner-wrapper header__inner-wrapper--closed">
-        <div class="logo">
-          <a href="#" class="logo__link logo__link--header">
-            <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img" width="157" height="36">
-          </a>
-        </div>
-
+      <div class="header__inner-wrapper">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
+        </a>
         <div class="search">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
             <label class="visually-hidden" for="search__input">Поиск по курсам</label>
@@ -86,14 +82,12 @@
             <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
           </form>
         </div>
-
         <div class="user">
           <div class="user__bookmark">
-            <img src="img/bookmark-icon.svg" alt="" class="user__bookmark-img" width="16" height="21">
-            <span class="user__bookmark-indicator indicator"></span>
+            <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
           </div>
           <div class="user__login">
-            <p class="user__greeting">Привет, <span class="user__name">Друг!</span></p>
+            <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
             <p class="user__text">Что нового узнаем сегодня?</p>
           </div>
           <div class="user__photo">
@@ -165,7 +159,7 @@
           <div class="swiper-pagination"></div>
 
       </d></div>
-      
+
 
     </section>
 
@@ -412,7 +406,7 @@
         <div class="carousel__btn-next"></div>
         <div class="carousel__btn-prev"></div>
       </div>
-      
+
     </section>
     <!-- New END-->
 

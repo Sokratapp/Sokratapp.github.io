@@ -1,12 +1,15 @@
 .logo {
+  display: block;
+  padding-top: 10px;
+
   @media (max-width: $mobile) {
     display: none;
   }
 }
 
 .logo__img {
-  width: 157px;
-  height: 36px;
+  width: 198px;
+  height: 40px;
 
   @media (max-width: $mobile) {
     width: 134px;
