@@ -375,19 +375,27 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0;
+  padding-top: 6px;
+  padding-bottom: 3px;
   background-color: #24272D;
   color: #ffffff; }
   @media (max-width: 768px) {
     .top-bar {
       display: none; } }
 
+.top-bar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .top-bar__content {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 55px;
   font-size: 17px;
   font-weight: bold;
-  line-height: 20px;
-  color: #ffffff;
-  margin: 0 45px 0 0; }
+  line-height: 22px;
+  color: #ffffff; }
 
 .header__wrapper {
   position: relative;
@@ -404,11 +412,10 @@ img {
           align-items: center;
   max-width: 1480px;
   margin: 0 auto;
-  padding: 15px 20px; }
-  .header__inner-wrapper .search {
-    -webkit-box-flex: 50;
-        -ms-flex-positive: 50;
-            flex-grow: 50; }
+  padding-top: 11px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 25px; }
   .header__inner-wrapper .user {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -429,13 +436,16 @@ img {
   .header__inner-wrapper--opened .user {
     display: none; } }
 
-@media (max-width: 768px) {
-  .logo {
-    display: none; } }
+.logo {
+  display: block;
+  padding-top: 10px; }
+  @media (max-width: 768px) {
+    .logo {
+      display: none; } }
 
 .logo__img {
-  width: 157px;
-  height: 36px; }
+  width: 198px;
+  height: 40px; }
   @media (max-width: 768px) {
     .logo__img {
       width: 134px;
@@ -456,10 +466,21 @@ img {
     .logo--closed .logo__link--header {
       display: none; } }
 
+.search {
+  -webkit-box-flex: 50;
+      -ms-flex-positive: 50;
+          flex-grow: 50;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  padding-top: 5px; }
+  @media (max-width: 768px) {
+    .search {
+      display: none; } }
+
 .search__form {
   position: relative;
-  margin-left: 60px;
-  margin-right: 100px; }
+  margin-left: 58px;
+  margin-right: 102px; }
   @media (max-width: 1366px) {
     .search__form {
       margin-right: 70px;
@@ -473,13 +494,13 @@ img {
   position: relative;
   width: 100%;
   height: 44px;
-  padding: 0 160px 0 45px;
+  padding: 0 160px 0 35px;
   border: 1px solid #00A7CF;
   border-radius: 10px;
   background-color: #F3F4F9;
   background-image: url("../../img/search-icon.svg");
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-position: 11px center;
   background-size: 18px; }
   .search__input::-webkit-input-placeholder {
     font-size: 13px;
@@ -505,13 +526,17 @@ img {
   top: 0;
   right: 0;
   height: 100%;
-  padding: 10px 40px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #00A7CF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 39px;
   border: none;
   border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #00A7CF;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   cursor: pointer; }
@@ -521,10 +546,6 @@ img {
     .search__submit-btn {
       padding-right: 20px;
       padding-left: 20px; } }
-
-@media (max-width: 768px) {
-  .search {
-    display: none; } }
 
 .user {
   display: -webkit-box;
@@ -554,7 +575,7 @@ img {
 
 .user__bookmark {
   position: relative;
-  margin-right: 30px; }
+  margin-right: 26px; }
   @media (max-width: 1024px) {
     .user__bookmark {
       margin-right: 10px; } }
@@ -563,7 +584,7 @@ img {
       display: none; } }
 
 .user__photo {
-  margin-left: 30px; }
+  margin-left: 21px; }
   @media (max-width: 1024px) {
     .user__photo {
       margin-left: 10px; } }
@@ -1811,10 +1832,25 @@ img {
   cursor: pointer; }
   .btn:focus, .btn:hover {
     background-color: #007e9c; }
-  .btn--pink {
-    background-color: #EF4864; }
-    .btn--pink:focus, .btn--pink:hover {
-      background-color: #eb193c; }
+
+.btn--pink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 119px;
+  height: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 19px;
+  background-color: #EF4864; }
+  .btn--pink:focus, .btn--pink:hover {
+    background-color: #eb193c; }
 
 .btn--disabled {
   opacity: 0.5; }
