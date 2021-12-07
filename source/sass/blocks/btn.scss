@@ -17,6 +17,16 @@
   &:hover {
     background-color: darken($main-color, 10);
   }
+
+  &--practices {
+    $btn-color: $accent-color;
+    background-color: $accent-color;
+
+    &:focus,
+    &:hover {
+      background-color: darken($accent-color, 10);
+    }
+  }
 }
 
 .btn--pink {
