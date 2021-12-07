@@ -3,12 +3,15 @@
 
   padding-right: 16px;
   padding-left: 16px;
-  padding-bottom: 9px;
 
-  background-image: url("../img/practices-header-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 278px 326px;
-  background-position: 100% 100%;
+  &--practices {
+    background-image:
+    url("../img/practices-header-bg.svg"),
+    url("../img/icons/logo-socrat.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 224px 263px, 275px 52px;
+  background-position: 50% 100%, 60% 11%;
+  }
 }
 
 .page-header__plug-img {
@@ -20,15 +23,6 @@
   max-width: 1440px;
   min-height: 375px;
   margin: 0 auto;
-}
-
-.page-header__slogan {
-  margin-top: 27px;
-
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 37px;
-  font-weight: 700;
 }
 
 .page-header__add-list {

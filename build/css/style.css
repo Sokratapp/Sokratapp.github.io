@@ -1017,10 +1017,7 @@ img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-top: 17px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 92px;
+  padding: 17px 25px 92px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 16px rgba(36, 39, 45, 0.2);
           box-shadow: 0 0 16px rgba(36, 39, 45, 0.2); }
@@ -1030,6 +1027,11 @@ img {
       padding: 0;
       -webkit-box-shadow: none;
               box-shadow: none; } }
+  .category--practices {
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding-top: 13px; }
 
 @media (max-width: 768px) {
   .category--mobile-hide {
@@ -1049,10 +1051,14 @@ img {
       font-size: 15px;
       line-height: 20px;
       text-align: start; } }
+  .category__title--practices {
+    margin: 0 25px 11px;
+    padding: 0;
+    font: 700 17px/22px "Gotham pro", "Arial", sans-serif; }
 
 .category__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 99px);
+  grid-template-columns: repeat(auto-fill, 91px);
   row-gap: 19px;
   -webkit-column-gap: 12px;
      -moz-column-gap: 12px;
@@ -1075,6 +1081,9 @@ img {
       padding-right: 16px;
       -webkit-box-shadow: 0 0 16px rgba(36, 39, 45, 0.2);
               box-shadow: 0 0 16px rgba(36, 39, 45, 0.2); } }
+  .category__list--practices {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .category__label {
   position: relative;
@@ -1086,8 +1095,8 @@ img {
     left: 0;
     top: 0;
     display: none;
-    width: 99px;
-    height: 99px;
+    width: 91px;
+    height: 91px;
     border-radius: 10px;
     background-color: rgba(36, 39, 45, 0.4); }
   .category__label::before {
@@ -1894,6 +1903,10 @@ img {
     .container {
       padding-right: 0;
       padding-left: 0; } }
+  .container--practices {
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px; }
 
 .container__wrapper {
   display: -webkit-box;
@@ -1925,12 +1938,12 @@ img {
 .page-header {
   background-color: #F3F4F9;
   padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 9px;
-  background-image: url("../img/practices-header-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 278px 326px;
-  background-position: 100% 100%; }
+  padding-left: 16px; }
+  .page-header--practices {
+    background-image: url("../img/practices-header-bg.svg"), url("../img/icons/logo-socrat.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 224px 263px, 275px 52px;
+    background-position: 50% 100%, 60% 11%; }
 
 .page-header__plug-img {
   position: relative;
@@ -1944,13 +1957,6 @@ img {
   max-width: 1440px;
   min-height: 375px;
   margin: 0 auto; }
-
-.page-header__slogan {
-  margin-top: 27px;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 37px;
-  font-weight: 700; }
 
 .page-header__add-list {
   display: -webkit-box;
@@ -3935,6 +3941,9 @@ img {
   @media (max-width: 768px) {
     .theme__btn {
       display: none; } }
+
+.theme__category {
+  margin-top: 20px; }
 
 .theme__courses {
   display: grid;
