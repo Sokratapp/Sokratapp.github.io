@@ -1,9 +1,9 @@
+//размер элемента категории
+$category-list-item-size: 91px;
+
 .category {
   height: fit-content;
-  padding-top: 17px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 92px;
+  padding: 17px 25px 92px;
   border-radius: 10px;
 
   box-shadow: 0 0 16px rgba($black, 0.2);
@@ -12,6 +12,12 @@
     margin-bottom: 52px;
     padding: 0;
     box-shadow: none;
+  }
+
+  &--practices {
+    box-shadow: 0 0 16px rgba(#000000, 0.1);
+    background-color: $white;
+    padding-top: 13px;
   }
 }
 
@@ -38,11 +44,21 @@
     line-height: 20px;
     text-align: start;
   }
+
+  &--practices {
+    margin: 0 25px 11px;
+    padding: 0;
+
+    font: 700 17px/22px $body-font-family;
+    // font-size: 18px;
+    // line-height: 22px;
+
+  }
 }
 
 .category__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 99px);
+  grid-template-columns: repeat(auto-fill, $category-list-item-size);
   row-gap: 19px;
   column-gap: 12px;
   justify-content: center;
@@ -63,6 +79,10 @@
 
     box-shadow: 0 0 16px rgba($black, 0.2);
   }
+
+  &--practices {
+    box-shadow: none;
+  }
 }
 
 .category__label {
@@ -77,8 +97,8 @@
     top: 0;
 
     display: none;
-    width: 99px;
-    height: 99px;
+    width: $category-list-item-size;
+    height: $category-list-item-size;
     border-radius: 10px;
 
     background-color: rgba($black, 0.4);

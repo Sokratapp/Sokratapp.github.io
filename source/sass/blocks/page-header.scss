@@ -3,6 +3,15 @@
 
   padding-right: 16px;
   padding-left: 16px;
+
+  &--practices {
+    background-image:
+    url("../img/practices-header-bg.svg"),
+    url("../img/icons/logo-socrat.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 224px 263px, 275px 52px;
+  background-position: 50% 100%, 60% 11%;
+  }
 }
 
 .page-header__plug-img {
@@ -10,11 +19,9 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  padding-top: 90px;
 
   max-width: 1440px;
+  min-height: 375px;
   margin: 0 auto;
 }
 
