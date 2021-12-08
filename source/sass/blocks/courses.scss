@@ -1,47 +1,33 @@
 .courses {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 325px);
-  justify-content: center;
-  row-gap: 32px;
-  column-gap: 20px;
-
+  grid-template-columns: 343px;
+  row-gap: 30px;
   padding-left: 0;
+  padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+  justify-content: center;
+
+  @media (min-width: $mobile) {
+    justify-content: start;
+    grid-template-columns: repeat(auto-fill, 325px);
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+
 
   list-style: none;
-
-  @media (max-width: $tablet) {
-    grid-template-columns: repeat(auto-fill, 260px);
-  }
-
-  @media (max-width: $mobile) {
-    grid-template-columns: 341px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 .courses__item {
-  padding-top: 21px;
-  padding-right: 21px;
-  padding-left: 21px;
-  padding-bottom: 8px;
+  padding: 20px 22px 18px;
+
   border-radius: 10px;
-
   box-shadow: 0 0 29px rgba($black, 0.2);
-
-  @media (max-width: $mobile) {
-    padding: 20px 22px 18px;
-  }
 }
 
 .courses__img {
-  margin-bottom: 21px;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 7px;
-  }
+  margin-bottom: 7px;
 }
 
 .courses__price {
@@ -49,20 +35,9 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
   font: 700 26px/31px $body-font-family;
-
-  @media (max-width: $tablet) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  @media (max-width: $mobile) {
-    margin-bottom: 10px;
-
-    font: 700 26px/31px $body-font-family;
-  }
 }
 
 .courses__term {
@@ -84,22 +59,9 @@
 
 .courses__title {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 9px;
 
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-
-  @media (max-width: $tablet) {
-    font-size: 17px;
-    line-height: 22px;
-  }
-
-  @media (max-width: $mobile) {
-    margin-bottom: 9px;
-
-    font: 500 19px/23px $body-font-family;
-  }
+  font: 500 19px/23px $body-font-family;
 }
 
 .courses__description {
