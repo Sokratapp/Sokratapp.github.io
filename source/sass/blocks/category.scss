@@ -1,88 +1,74 @@
 //размер элемента категории
-$category-list-item-size: 91px;
+$category-list-item-size-mobile: 91px;
+$category-list-item-size-desktop: 99px;
 
 .category {
   height: fit-content;
-  padding: 17px 25px 92px;
+  padding: 13px 0 14px 24px;
+  // padding: 13px 25px 92px;
+  margin-bottom: 20px;
+
   border-radius: 10px;
 
-  box-shadow: 0 0 16px rgba($black, 0.2);
+  background-color: $white;
+  box-shadow: 0 0 16px rgba(#000000, 0.1);
 
-  @media (max-width: $mobile) {
-    margin-bottom: 52px;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  &--practices {
-    box-shadow: 0 0 16px rgba(#000000, 0.1);
-    background-color: $white;
-    padding-top: 13px;
+  @media (min-width: $desktop) {
+    padding: 15px 26px;
   }
 }
 
-.category--mobile-hide {
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
+// .category--mobile-hide {
+//   @media (max-width: $mobile) {
+//     display: none;
+//   }
+// }
 
 .category__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 7px;
+  padding: 0;
 
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
+  font: 700 17px/22px $body-font-family;
 
-  @media (max-width: $mobile) {
-    margin-bottom: 19px;
-    padding-right: 18px;
-    padding-left: 18px;
-
-    font-size: 15px;
-    line-height: 20px;
-    text-align: start;
+  @media (min-width: $desktop) {
+    font: 700 20px/24px $body-font-family;
   }
+  // margin-bottom: 19px;
+  // margin-top: 13px;
+  // padding-right: 18px;
+  // padding-left: 18px;
 
-  &--practices {
-    margin: 0 25px 11px;
-    padding: 0;
+  // margin-top: 0;
+  // margin-bottom: 40px;
 
-    font: 700 17px/22px $body-font-family;
-    // font-size: 18px;
-    // line-height: 22px;
-
-  }
+  // font-size: 20px;
+  // line-height: 27px;
+  // text-align: center;
 }
 
 .category__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, $category-list-item-size);
-  row-gap: 19px;
-  column-gap: 12px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, $category-list-item-size-mobile);
+  row-gap: 16px;
+  column-gap: 11px;
+  justify-content: start;
+
 
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 
   list-style: none;
 
-  @media (max-width: $mobile) {
-    justify-content: start;
-
-    padding-top: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    box-shadow: 0 0 16px rgba($black, 0.2);
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fill, $category-list-item-size-desktop);
+    column-gap: 12px;
+    row-gap: 19px;
   }
-
-  &--practices {
-    box-shadow: none;
-  }
+// justify-content: center;
 }
 
 .category__label {
@@ -97,22 +83,27 @@ $category-list-item-size: 91px;
     top: 0;
 
     display: none;
-    width: $category-list-item-size;
-    height: $category-list-item-size;
-    border-radius: 10px;
+    width: $category-list-item-size-mobile;
+    height: $category-list-item-size-mobile;
+    border-radius: 20px;
 
     background-color: rgba($black, 0.4);
+
+    @media (min-width: $desktop) {
+      width: $category-list-item-size-desktop;
+      height: $category-list-item-size-desktop;
+    }
   }
 
   &::before {
     position: absolute;
     content: "";
     right: 5.5px;
-    top: 82px;
+    top: 76px;
 
     display: none;
-    width: 13.5px;
-    height: 13.5px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
 
     background-image: url("../img/checkmark.svg");
@@ -120,6 +111,12 @@ $category-list-item-size: 91px;
     background-repeat: no-repeat;
 
     z-index: 1;
+
+    @media (min-width: $desktop) {
+      width: 13px;
+      height: 13px;
+      top: 82px;
+    }
   }
 }
 
@@ -127,23 +124,17 @@ $category-list-item-size: 91px;
   border-radius: 20px;
 }
 
-.category__input:checked ~ .category__label {
-  &::after,
-  &::before {
+.category__input:checked + .category__label::after,
+.category__input:checked + .category__label::before {
     display: block;
-  }
 }
 
 .category__name {
   display: block;
   width: 100%;
 
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 700;
   text-align: center;
-
-  @media (max-width: $mobile) {
-    margin-top: -3px;
-  }
 }
