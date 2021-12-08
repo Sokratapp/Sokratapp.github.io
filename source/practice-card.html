@@ -282,6 +282,89 @@
         </div>
       </div>
     </section>
+    <section class="popup-work popup-work--hidden">
+      <form class="popup-work__form" action="">
+        <h2 class="popup-work__title">Отклик на вакансию</h2>
+        <button class="popup-work__close" type="button"></button>
+        <fieldset class="popup-work__fieldset fieldset">
+          <legend class="fieldset__title">Контактные данные</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="last-name">Ваша фамилия</label>
+              <input class="input__field" type="text" id="last-name" placeholder="Введите вашу фамилию">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="first-name">Введите ваше имя</label>
+              <input class="input__field" type="text" id="first-name" placeholder="Ваше имя">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="patronomic">Введите ваше отчество</label>
+              <input class="input__field" type="text" id="patronomic" placeholder="Ваше отчество">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="phone">Ваш номер телефона</label>
+              <input class="input__field" type="number" id="phone" placeholder="+7 (920) 123 45 67">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="email">Ваш email</label>
+              <input class="input__field" type="email" id="email" placeholder="Введите вашу почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup-work__fieldset fieldset">
+          <legend class="fieldset__title">Данные о вакансии</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-id">id вакансии</label>
+              <input class="input__field" type="number" id="course-id" value="123456" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-name">Название вакансии</label>
+              <input class="input__field" type="text" id="course-name" value="Философия искусственного интеллекта" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="partner">Партнер вакансии</label>
+              <input class="input__field" type="text" id="partner" value="Skillbox" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup-work__fieldset fieldset fieldset--pay">
+          <legend class="fieldset__title">Способ оплаты</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input input--pay">
+              <input class="input__field" type="text" value="Оплата с помощью карты" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="popup-work__info">
+          Нажимая откликнуться, вы соглашаетесь
+          с нашей <a class="popup-work__confidentiality" id="confidentiality" href="#">Политикой конфиденциальности</a>
+        </p>
+        <button class="popup-work__button-pay btn btn--disabled" type="submit" disabled>Откликнуться</button>
+      </form>
+    </section>
+    <section class="popup-confidentiality popup-confidentiality--hidden">
+      <div class="popup-confidentiality__block">
+        <h2 class="popup-confidentiality__title">Frontend Developer</h2>
+        <button class="popup-confidentiality__close" type="button"></button>
+        <p class="popup-confidentiality__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -377,7 +460,7 @@
             <a href="#" class="bottom-bar__nav-link">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link">Политика конфиденциальности</a>
+            <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
           </li>
         </ul>
 
@@ -388,8 +471,8 @@
   </footer>
 
   <script src="js/vendor.js"></script>
+  <script src="js/popups.js" type="module"></script>
   <script src="js/script.js"></script>
-
 </body>
 
 </html>

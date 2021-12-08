@@ -389,11 +389,11 @@
       </div>
     </section>
 
-    <section class="popup popup--hidden">
-      <form class="popup__form" action="">
-        <h2 class="popup__title">Оплата курса</h2>
-        <button class="popup__close" type="button"></button>
-        <fieldset class="popup__fieldset fieldset">
+    <section class="popup-payment popup-payment--hidden">
+      <form class="popup-payment__form" action="">
+        <h2 class="popup-payment__title">Оплата курса</h2>
+        <button class="popup-payment__close" type="button"></button>
+        <fieldset class="popup-payment__fieldset fieldset">
           <legend class="fieldset__title">Контактные данные</legend>
           <ul class="fielset__input-list">
             <li class="fieldset__input-item input">
@@ -418,7 +418,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="popup__fieldset fieldset">
+        <fieldset class="popup-payment__fieldset fieldset">
           <legend class="fieldset__title">Данные о курсе</legend>
           <ul class="fielset__input-list">
             <li class="fieldset__input-item input">
@@ -435,7 +435,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="popup__fieldset fieldset fieldset--pay">
+        <fieldset class="popup-payment__fieldset fieldset fieldset--pay">
           <legend class="fieldset__title">Способ оплаты</legend>
           <ul class="fielset__input-list">
             <li class="fieldset__input-item input input--pay">
@@ -443,15 +443,35 @@
             </li>
           </ul>
         </fieldset>
-        <p class="popup__info">
+        <p class="popup-payment__info">
           Нажимая оплатить, вы соглашаетесь
-          с нашей <a class="popup__confidentiality" href="#">Политикой конфиденциальности</a>
+          с нашей <a class="popup-payment__confidentiality" id="confidentiality" href="#">Политикой конфиденциальности</a>
         </p>
-        <button class="popup__button-pay btn btn--disabled" type="submit" disabled>Оплатить <b class="popup__price">140 000 ₽</b></button>
+        <button class="popup-payment__button-pay btn btn--disabled" type="submit" disabled>Оплатить <b class="popup-payment__price">140 000 ₽</b></button>
       </form>
     </section>
-    <!-- Similar courses END-->
-
+    <section class="popup-confidentiality popup-confidentiality--hidden">
+      <div class="popup-confidentiality__block">
+        <h2 class="popup-confidentiality__title">Frontend Developer</h2>
+        <button class="popup-confidentiality__close" type="button"></button>
+        <p class="popup-confidentiality__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -547,7 +567,7 @@
             <a href="#" class="bottom-bar__nav-link">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link">Политика конфиденциальности</a>
+            <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
           </li>
         </ul>
 
@@ -557,7 +577,7 @@
     </div>
   </footer>
   <script src="js/vendor.js"></script>
-  <script src="js/form-popup.js"></script>
+  <script src="js/popups.js" type="module"></script>
   <script src="js/script.js"></script>
 </body>
 
