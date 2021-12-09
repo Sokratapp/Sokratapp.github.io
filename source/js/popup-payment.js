@@ -59,9 +59,14 @@ if (popup) {
     closePopup();
   }
 
-  console.log(2);
+  const onButtonPayClick = (evt) => {
+    evt.preventDefault();
+    closePopup();
+  }
+
   buttonOpen.addEventListener('click', onButtonClick);
   buttonClose.addEventListener('click', onButtonCloseClick);
+  buttonPay.addEventListener('click', onButtonPayClick);
   window.addEventListener('click', onWindowClick);
   window.addEventListener('keydown', onWindowKeydown);
 

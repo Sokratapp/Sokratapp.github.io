@@ -1,4 +1,4 @@
-.popup-confidentiality {
+.popup-conditions {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -11,11 +11,11 @@
   background-color: rgba($bg-light, 0.6);
 }
 
-.popup-confidentiality--hidden {
+.popup-conditions--hidden {
   display: none;
 }
 
-.popup-confidentiality__block {
+.popup-conditions__block {
   position: relative;
 
   display: flex;
@@ -37,7 +37,7 @@
   box-shadow: 0 0 29px 0 rgba($black, 0.1);
 }
 
-.popup-confidentiality__title {
+.popup-conditions__title {
   margin-top: 0;
   margin-bottom: 18px;
 
@@ -46,7 +46,7 @@
   font-weight: 700;
 }
 
-.popup-confidentiality__close {
+.popup-conditions__close {
   position: absolute;
 
   top: 16px;
@@ -99,7 +99,7 @@
   }
 }
 
-.popup-confidentiality__text {
+.popup-conditions__text {
   position: relative;
 
   margin-top: 0;

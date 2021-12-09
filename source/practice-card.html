@@ -71,7 +71,7 @@
           Ищите знания<br>
           в приложении Sokrat.
         </p>
-        <a href="#" class="btn btn--pink">Скачать</a>
+        <a href="#" class="btn btn--pink" id="app">Скачать</a>
       </div>
     </div>
     <div class="header__wrapper">
@@ -87,7 +87,7 @@
           </form>
         </div>
         <div class="user">
-          <div class="user__bookmark">
+          <div class="user__bookmark" id="compare">
             <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
           </div>
           <div class="user__login">
@@ -340,14 +340,122 @@
           Нажимая откликнуться, вы соглашаетесь
           с нашей <a class="popup-work__confidentiality" id="confidentiality" href="#">Политикой конфиденциальности</a>
         </p>
-        <button class="popup-work__button-pay btn btn--disabled" type="submit" disabled>Откликнуться</button>
+        <button class="popup-work__button-pay btn btn--disabled" type="submit" id="accept" disabled>Откликнуться</button>
       </form>
+    </section>
+    <section class="popup-congratulation popup-congratulation--hidden">
+      <div class="popup-congratulation__block">
+        <h2 class="popup-congratulation__title">Ваша отклик принят!</h2>
+        <p class="popup-congratulation__gratitude">
+          Спасибо за отлик! В ближайшее
+          время к вам на почту придет вся
+          информация по вакансии!
+        </p>
+        <button class="popup-congratulation__button btn">Хорошо</button>
+      </div>
+    </section>
+    <section class="popup-cookie popup-cookie--hidden">
+      <div class="popup-cookie__block">
+        <p class="popup-cookie__text">
+          Мы, как и все,
+          используем <a class="popup-cookie__link" id="cookie" href="#">cookie</a>
+        </p>
+        <button class="popup-cookie__button btn" id="app">Я понимаю</button>
+      </div>
+    </section>
+    <section class="popup-cookie-info popup-cookie-info--hidden">
+      <div class="popup-cookie-info__block">
+        <h2 class="popup-cookie-info__title">Сookie</h2>
+        <button class="popup-cookie-info__close" type="button"></button>
+        <p class="popup-cookie-info__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-app popup-app--hidden">
+      <div class="popup-app__block">
+        <button class="popup-app__close" type="button"></button>
+        <p class="popup-app__slogan">Удобнее искать знания в приложении</p>
+        <p class="popup-app__text">
+          Скачайте мобильное приложение
+          Sokrat., чтобы иметь самый быстрый
+          доступ к новым курсам.
+        </p>
+        <div class="popup-app__links">
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--store" src="img/app-store-btn.svg" alt="Скачать с App Store" width="200" height="67">
+          </a>
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--google" src="img/google-play-btn.svg" alt="Скачать Google Play" width="247" height="67">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="popup-compare popup-compare--hidden">
+      <div class="popup-compare__block">
+        <h2 class="popup-compare__title">Сравните курсы</h2>
+        <button class="popup-compare__close" type="button">Добавить курс</button>
+        <ul class="popup-compare__list">
+          <li class="popup-compare__item popup-compare__item--titles">
+            <p class="popup-compare__title-name">Название курса</p>
+            <p class="popup-compare__title-name">Прожолжительность</p>
+            <p class="popup-compare__title-name">Цена</p>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="popup-confidentiality popup-confidentiality--hidden">
       <div class="popup-confidentiality__block">
         <h2 class="popup-confidentiality__title">Frontend Developer</h2>
         <button class="popup-confidentiality__close" type="button"></button>
         <p class="popup-confidentiality__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-conditions popup-conditions--hidden">
+      <div class="popup-conditions__block">
+        <h2 class="popup-conditions__title">Условия использования</h2>
+        <button class="popup-conditions__close" type="button"></button>
+        <p class="popup-conditions__text">
           Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
           Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
           Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
@@ -457,7 +565,7 @@
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
             <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link">Условия использования</a>
+            <a href="#" class="bottom-bar__nav-link" id="conditions">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
             <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
@@ -469,10 +577,7 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/vendor.js"></script>
-  <script src="js/popups.js" type="module"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

@@ -1,26 +1,26 @@
-const popup = document.querySelector('.popup-confidentiality');
+const popup = document.querySelector('.popup-app');
 
 if (popup) {
-  const buttonsOpen = document.querySelectorAll('#confidentiality');
-  const buttonClose = popup.querySelector('.popup-confidentiality__close');
+  const buttonOpen = document.querySelectorAll('#app');
+  const buttonClose = document.querySelector('.popup-app__close');
   const page = document.querySelector('html');
 
   const openPopup = () => {
-    popup.classList.remove('popup-confidentiality--hidden');
+    popup.classList.remove('popup-app--hidden');
 
     page.style.overflowY = 'hidden';
     buttonClose.focus();
   }
 
   const closePopup = () => {
-    popup.classList.add('popup-confidentiality--hidden');
+    popup.classList.add('popup-app--hidden');
     page.style.overflowY = 'auto';
   }
 
   const onWindowClick = (evt) => {
-    const isPopup = evt.target.closest('.popup-confidentiality__block');
-    const isButton = evt.target.closest('#confidentiality');
-    const isClose = popup.classList.contains('popup-confidentiality--hidden');
+    const isPopup = evt.target.closest('.popup-app__block');
+    const isButton = evt.target.closest('#app');
+    const isClose = popup.classList.contains('popup-app--hidden');
 
     if (!isPopup && !isButton && !isClose) {
       closePopup()
@@ -28,7 +28,7 @@ if (popup) {
   }
 
   const onWindowKeydown = (evt) => {
-    if (!popup.classList.contains('popup-confidentiality--hidden')) {
+    if (!popup.classList.contains('popup-app--hidden')) {
       if (evt.key === "Esc" || evt.key === "Escape") {
         closePopup();
       }
@@ -46,7 +46,7 @@ if (popup) {
   }
 
 
-  buttonsOpen.forEach((el) => {
+  buttonOpen.forEach((el) => {
     el.addEventListener('click', onButtonClick);
   })
 
