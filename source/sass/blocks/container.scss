@@ -4,17 +4,13 @@
   margin-left: auto;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 
-  @media (max-width: $mobile) {
-    padding-right: 0;
-    padding-left: 0;
+  @media (min-width: $desktop) {
+    margin-top: 66px;
+    margin-bottom: 142px;
   }
-
-  &--practices {
-    margin-top: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    }
 }
 
 .container__wrapper {

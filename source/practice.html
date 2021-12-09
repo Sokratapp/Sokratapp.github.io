@@ -70,7 +70,7 @@
   </div>
 
   <header class="header">
-    <div class="top-bar">
+    <div class="top-bar" aria-label="Приложение Sokrat">
       <div class="top-bar__container container">
         <p class="top-bar__content">
           Ищите знания<br>
@@ -82,12 +82,12 @@
     <div class="header__wrapper">
       <div class="header__inner-wrapper">
         <a class="logo" href="index.html">
-          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="Логотип Sokrat">
         </a>
-        <div class="search">
+        <div class="search" aria-label="Поиск по сайту">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
             <label class="visually-hidden" for="search__input">Поиск по курсам</label>
-            <input class="search__input" id="search__input" type="text" placeholder="Поиск по курсам" value="" name="s">
+            <input class="search__input" id="search__input" type="text" placeholder="Поиск" value="" name="s">
             <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
           </form>
         </div>
@@ -99,14 +99,14 @@
             <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
             <p class="user__text">Что нового узнаем сегодня?</p>
           </div>
-          <div class="user__photo">
+          <div class="user__photo" aria-label="Аватар пользователя">
             <img src="img/camera-icon.svg" alt="" class="user__photo-img" width="16" height="14">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="main-nav main-nav--closed">
+    <div class="main-nav main-nav--closed" aria-label="Навигация по сайту">
       <button class="main-nav__toggle" type="button">
         <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
       </button>
@@ -116,7 +116,7 @@
             <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Все курсы</a>
+            <a href="#" class="main-nav__link">Каталог курсов</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Вакансии</a>
@@ -134,20 +134,10 @@
       <div class="page-header__plug-img"></div>
     </header>
 
-    <div class="container container--practices">
-      <div class="category category--practices" aria-label="Выбор категорий вакансий">
+    <div class="theme container">
+      <div class="category" aria-label="Выбор категорий вакансий">
         <h2 class="category__title category__title--practices">Выберите категорию</h2>
         <ul class="category__list category__list--practices">
-          <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="category__name">Блокчейн</span>
-            </label>
-          </li>
           <li class="category__item">
             <input class="category__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
             <label class="category__label" for="blockchain1">
@@ -159,8 +149,8 @@
             </label>
           </li>
           <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
+            <input class="category__input visually-hidden" id="blockchain2" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain2">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -179,8 +169,8 @@
             </label>
           </li>
           <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
+            <input class="category__input visually-hidden" id="blockchain4" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain4">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -189,8 +179,8 @@
             </label>
           </li>
           <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
+            <input class="category__input visually-hidden" id="blockchain5" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain5">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -199,18 +189,8 @@
             </label>
           </li>
           <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="category__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
+            <input class="category__input visually-hidden" id="blockchain6" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain6">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -222,95 +202,39 @@
       </div>
       <div class="course-all__block">
         <form class="course-all__form" action="">
-          <input class="course-all__search" type="search" placeholder="Поиск по курсам">
-          <div class="course-all__button-box">
-            <button class="course-all__btn-options" type="button">
-              <img src="img/favicon/settings.svg" alt="">
-            </button>
-            <button class="course-all__btn course-all__btn--active" type="button">Frontend</button>
-            <button class="course-all__btn" type="button">Backend</button>
-          </div>
+          <input class="course-all__search" type="search" placeholder="Поиск по вакансиям">
         </form>
-        <ul class="theme__courses courses">
+        <ul class="course-all__courses courses">
           <li class="courses__item">
             <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
             <p class="courses__price">
               700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
             </p>
             <p class="courses__title">
-              Философия искусственного интеллекта
+              Frontend Developer
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <p class="courses__description">
+              Описание вакансии выдаем в две
+              строчки с многоточием...
+            </p>
+            <a class="courses__link btn btn--practices" href="#">Подробнее</a>
           </li>
           <li class="courses__item">
             <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
             <p class="courses__price">
               700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
             </p>
             <p class="courses__title">
-              Философия искусственного интеллекта
+              Frontend Developer
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
-          </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
-              700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
+            <p class="courses__description">
+              Описание вакансии выдаем в две
+              строчки с многоточием...
             </p>
-            <p class="courses__title">
-              Философия искусственного интеллекта
-            </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
-          </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
-              700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
-            </p>
-            <p class="courses__title">
-              Философия искусственного интеллекта
-            </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
-          </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
-              700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
-            </p>
-            <p class="courses__title">
-              Философия искусственного интеллекта
-            </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
-          </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
-              700 000 ₽
-              <span class="courses__term">
-                23 месяца
-              </span>
-            </p>
-            <p class="courses__title">
-              Философия искусственного интеллекта
-            </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="courses__link btn btn--practices" href="#">Подробнее</a>
           </li>
         </ul>
+        <a class="course-all__more btn btn--practices" href="#">Показать еще</a>
       </div>
     </div>
     <section class="popup-cookie popup-cookie--hidden">
@@ -442,9 +366,6 @@
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
               <a href="#" class="footer__nav-link">Все курсы</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Консультант</a>
             </li>
             <li class="footer__nav-item">
               <a href="#" class="footer__nav-link">Оплата обучения</a>
