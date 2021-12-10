@@ -28,7 +28,7 @@
     "avatar"
     "data";
     row-gap: 29px;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 }
 
@@ -205,22 +205,6 @@
   }
 }
 
-.partner__courses-title {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 19px;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
-
-  @media (max-width: $mobile) {
-    display: block;
-  }
-}
-
 .partner__courses {
   display: grid;
   grid-template-columns: 373px 1fr;
@@ -231,5 +215,9 @@
 
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
+    grid-template-areas:
+    "category"
+    "courses"
+    "btn";
   }
 }

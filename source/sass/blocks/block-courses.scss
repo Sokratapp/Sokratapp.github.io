@@ -13,6 +13,12 @@
   margin-bottom: 40px;
 
   list-style: none;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .block-courses__item {
