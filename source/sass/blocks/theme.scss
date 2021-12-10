@@ -6,6 +6,16 @@
     grid-template-columns: 373px 1fr;
     column-gap: 52px;
   }
+
+  &--practices {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+      margin-top: 66px;
+      margin-bottom: 142px;
+    }
+  }
 }
 
 .theme__info {

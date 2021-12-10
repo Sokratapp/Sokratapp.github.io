@@ -11,7 +11,7 @@
   @media (min-width: $mobile) {
     justify-content: start;
     grid-template-columns: repeat(auto-fill, 325px);
-    row-gap: 40px;
+    row-gap: 39px;
     column-gap: 20px;
   }
 
@@ -20,7 +20,7 @@
 }
 
 .courses__item {
-  padding: 20px 22px 18px;
+  padding: 24px 22px 3px;
 
   border-radius: 10px;
   box-shadow: 0 0 29px rgba($black, 0.2);
@@ -35,9 +35,9 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
-  font: 700 26px/31px $body-font-family;
+  font: 700 25px/30px $body-font-family;
 }
 
 .courses__term {
@@ -66,7 +66,7 @@
 
 .courses__description {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 
   font: 400 15px/18px $body-font-family;
 }
@@ -76,6 +76,6 @@
   width: 100%;
   margin-top: auto;
   margin-bottom: 5px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
