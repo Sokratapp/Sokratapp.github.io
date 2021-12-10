@@ -1,4 +1,4 @@
-.courses {
+.block-courses {
   display: grid;
   grid-template-columns: 343px;
   row-gap: 30px;
@@ -19,18 +19,18 @@
   list-style: none;
 }
 
-.courses__item {
+.block-courses__item {
   padding: 20px 22px 18px;
 
   border-radius: 10px;
   box-shadow: 0 0 29px rgba($black, 0.2);
 }
 
-.courses__img {
+.block-courses__img {
   margin-bottom: 7px;
 }
 
-.courses__price {
+.block-courses__price {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -40,7 +40,7 @@
   font: 700 26px/31px $body-font-family;
 }
 
-.courses__term {
+.block-courses__term {
   font-size: 17px;
   line-height: 25px;
   font-weight: 700;
@@ -57,21 +57,21 @@
   }
 }
 
-.courses__title {
+.block-courses__title {
   margin-top: 0;
   margin-bottom: 9px;
 
   font: 500 19px/23px $body-font-family;
 }
 
-.courses__description {
+.block-courses__description {
   margin-top: 0;
   margin-bottom: 22px;
 
   font: 400 15px/18px $body-font-family;
 }
 
-.courses__link {
+.block-courses__link {
   justify-content: center;
   width: 100%;
   margin-top: auto;

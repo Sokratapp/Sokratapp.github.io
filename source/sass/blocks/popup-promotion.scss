@@ -22,7 +22,6 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
 
-  max-height: 576px;
   max-width: 1228px;
   margin-top: 30px;
   margin-right: auto;
@@ -31,8 +30,16 @@
   border-radius: 20px;
 
   background-color: $white;
-
   box-shadow: 0 0 29px 0 rgba($black, 0.1);
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+
+    padding-top: 19px;
+    padding-bottom: 13px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .popup-promotion__close {
@@ -86,6 +93,10 @@
   &:active {
     transform: scale(0.9);
   }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .popup-promotion__img {
@@ -96,6 +107,11 @@
   border-radius: 10px;
 
   background-color: $main-color;
+
+  @media (max-width: $mobile) {
+    height: 239px;
+    margin-bottom: 17px;
+  }
 }
 
 .popup-promotion__slogan {
@@ -105,6 +121,14 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
 }
 
 .popup-promotion__text {
@@ -113,6 +137,13 @@
 
   font-size: 15px;
   line-height: 24px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 .popup-promotion__title {
@@ -122,6 +153,12 @@
   font-size: 10px;
   line-height: 10px;
   font-weight: 800;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+  }
 }
 
 .popup-promotion__partner {
@@ -187,6 +224,19 @@
   background-image: url("../img/icons/copy.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 16px), 50%;
+
+  @media (max-width: $mobile) {
+    height: 44px;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    background-position: calc(100% - 13px), 50%;
+    background-size: 12px 14px;
+  }
 }
 
 .popup-promotion__button {
@@ -196,4 +246,15 @@
 
   height: 64px;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: $mobile) {
+    height: 44px;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
