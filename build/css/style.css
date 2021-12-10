@@ -1027,6 +1027,13 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 768px) {
+    .block-filter {
+      margin-right: 16px;
+      margin-left: 16px;
+      padding-top: 9px;
+      padding-right: 23px;
+      padding-left: 23px; } }
 
 .block-filter__title {
   margin-top: 0;
@@ -1036,6 +1043,13 @@ img {
   line-height: 27px;
   font-weight: 700;
   text-align: center; }
+  @media (max-width: 768px) {
+    .block-filter__title {
+      margin-bottom: 9px;
+      padding-left: 6px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: start; } }
 
 .block-filter__list {
   display: grid;
@@ -1497,6 +1511,9 @@ img {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       margin: 0;
       padding-top: 17px; } }
 
@@ -4339,7 +4356,7 @@ img {
     .partner__info {
       grid-template-areas: "avatar" "data";
       row-gap: 29px;
-      margin-bottom: 25px; } }
+      margin-bottom: 16px; } }
 
 .partner__avatar {
   grid: avatar;
@@ -4485,19 +4502,6 @@ img {
     .partner__btn {
       display: none; } }
 
-.partner__courses-title {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 19px;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700; }
-  @media (max-width: 768px) {
-    .partner__courses-title {
-      display: block; } }
-
 .partner__courses {
   display: grid;
   grid-template-columns: 373px 1fr;
@@ -4507,7 +4511,8 @@ img {
           column-gap: 50px; }
   @media (max-width: 768px) {
     .partner__courses {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      grid-template-areas: "category" "courses" "btn"; } }
 
 .instructor {
   padding-top: 38px;
@@ -6051,6 +6056,11 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
   list-style: none; }
+  @media (max-width: 768px) {
+    .block-courses {
+      grid-template-columns: 1fr;
+      padding-right: 16px;
+      padding-left: 16px; } }
 
 .block-courses__item {
   padding-top: 20px;
