@@ -1,8 +1,8 @@
 //размер элемента категории
-$category-list-item-size-mobile: 91px;
-$category-list-item-size-desktop: 99px;
+$block-filter-list-item-size-mobile: 91px;
+$block-filter-list-item-size-desktop: 99px;
 
-.category {
+.block-filter {
   height: fit-content;
   padding: 13px 0 14px 24px;
   // padding: 13px 25px 92px;
@@ -18,13 +18,13 @@ $category-list-item-size-desktop: 99px;
   }
 }
 
-// .category--mobile-hide {
+// .block-filter--mobile-hide {
 //   @media (max-width: $mobile) {
 //     display: none;
 //   }
 // }
 
-.category__title {
+.block-filter__title {
   margin-top: 0;
   margin-bottom: 7px;
   padding: 0;
@@ -47,9 +47,9 @@ $category-list-item-size-desktop: 99px;
   // text-align: center;
 }
 
-.category__list {
+.block-filter__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, $category-list-item-size-mobile);
+  grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-mobile);
   row-gap: 16px;
   column-gap: 11px;
   justify-content: start;
@@ -64,14 +64,14 @@ $category-list-item-size-desktop: 99px;
   list-style: none;
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(auto-fill, $category-list-item-size-desktop);
+    grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-desktop);
     column-gap: 12px;
     row-gap: 19px;
   }
 // justify-content: center;
 }
 
-.category__label {
+.block-filter__label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -83,15 +83,15 @@ $category-list-item-size-desktop: 99px;
     top: 0;
 
     display: none;
-    width: $category-list-item-size-mobile;
-    height: $category-list-item-size-mobile;
+    width: $block-filter-list-item-size-mobile;
+    height: $block-filter-list-item-size-mobile;
     border-radius: 20px;
 
     background-color: rgba($black, 0.4);
 
     @media (min-width: $desktop) {
-      width: $category-list-item-size-desktop;
-      height: $category-list-item-size-desktop;
+      width: $block-filter-list-item-size-desktop;
+      height: $block-filter-list-item-size-desktop;
     }
   }
 
@@ -120,16 +120,16 @@ $category-list-item-size-desktop: 99px;
   }
 }
 
-.category__img {
+.block-filter__img {
   border-radius: 20px;
 }
 
-.category__input:checked + .category__label::after,
-.category__input:checked + .category__label::before {
+.block-filter__input:checked + .block-filter__label::after,
+.block-filter__input:checked + .block-filter__label::before {
     display: block;
 }
 
-.category__name {
+.block-filter__name {
   display: block;
   width: 100%;
 
