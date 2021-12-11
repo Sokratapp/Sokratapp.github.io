@@ -26,6 +26,10 @@
   @media (min-width: $desktop) {
     margin-bottom: 9px;
   }
+
+  &--courses {
+    margin-bottom: 14px;
+  }
 }
 
 .products__price {
@@ -36,6 +40,10 @@
   margin-bottom: 8px;
 
   font: 700 25px/30px $body-font-family;
+
+  &--courses {
+    margin-bottom: 19px;
+  }
 }
 
 .products__term {
@@ -64,6 +72,10 @@
   @media (min-width: $desktop) {
     margin-bottom: 8px;
   }
+
+  &--courses {
+    margin-bottom: 29px;
+  }
 }
 
 .products__description {
@@ -85,8 +97,16 @@
   padding-top: 9px;
   padding-bottom: 5px;
 
+  font: 700 17px/20px $body-font-family;
+
   @media (min-width: $desktop) {
     padding-top: 8px;
     padding-bottom: 4px;
+  }
+
+  &--courses {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-radius: 7px;
   }
 }
