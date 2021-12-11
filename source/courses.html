@@ -128,9 +128,9 @@
       <div class="page-header__plug-img"></div>
     </header>
 
-    <div class="profession container">
-      <div class="profession__category category category--mobile-hide" aria-label="Выбор категорий вакансий">
-        <h2 class="category__title">Выберите темы которые интересны</h2>
+    <div class="list-layout container">
+      <div class="list-layout__block-filter category" aria-label="Выбор категорий курсов">
+        <h2 class="category__title">Мои категории</h2>
         <ul class="category__list">
           <li class="category__item">
             <input class="category__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
@@ -162,97 +162,120 @@
               <span class="category__name">Блокчейн</span>
             </label>
           </li>
+          <li class="category__item">
+            <input class="category__input visually-hidden" id="blockchain4" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain4">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="category__name">Блокчейн</span>
+            </label>
+          </li>
+          <li class="category__item">
+            <input class="category__input visually-hidden" id="blockchain5" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain5">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="category__name">Блокчейн</span>
+            </label>
+          </li>
+          <li class="category__item">
+            <input class="category__input visually-hidden" id="blockchain6" type="checkbox" name="category" value="blockchain">
+            <label class="category__label" for="blockchain6">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="category__name">Блокчейн</span>
+            </label>
+          </li>
         </ul>
       </div>
-      <div class="course-all__block">
-        <form action="">
-          <input class="course-all__search" type="search" placeholder="Поиск по курсам">
-          <div class="course-all__button-box">
-            <button class="course-all__btn-options" type="button">
-              <img src="img/favicon/settings.svg" alt="">
-            </button>
-            <button class="course-all__btn-frontend" type="button">Frontend</button>
-            <button class="course-all__btn-backend" type="button">Backend</button>
-          </div>
+      <div class="list-layout__block-list block-list">
+        <form class="block-list__form" action="">
+          <input class="block-list__search" type="search" placeholder="Поиск по курсам">
         </form>
-        <ul class="profession__courses courses">
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+        <ul class="block-list__products products">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
-          <li class="courses__item">
-            <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="courses__price">
+          <li class="products__item">
+            <img class="products__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price">
               700 000 ₽
-              <span class="courses__term">
+              <span class="products__term">
                 23 месяца
               </span>
             </p>
-            <p class="courses__title">
+            <p class="products__title">
               Философия искусственного интеллекта
             </p>
-            <a class="courses__link btn" href="#">Подробнее</a>
+            <a class="products__link btn" href="#">Подробнее</a>
           </li>
         </ul>
       </div>

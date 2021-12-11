@@ -76,7 +76,7 @@
           Ищите знания<br>
           в приложении Sokrat.
         </p>
-        <a href="#" class="btn btn--pink">Скачать</a>
+        <a href="#" class="btn btn--pink"  id="app">Скачать</a>
       </div>
     </div>
     <div class="header__wrapper">
@@ -92,7 +92,7 @@
           </form>
         </div>
         <div class="user">
-          <div class="user__bookmark">
+          <div class="user__bookmark" id="compare">
             <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
           </div>
           <div class="user__login">
@@ -153,179 +153,137 @@
       </div>
     </header>
 
-    <div class="course">
-      <div class="course__wrapper">
-        <div class="course__info">
-          <h1 class="course__title">МВА – GENERAL MANAGEMENT</h1>
-          <p class="course__price">Стоимость обучения <span>700 000 ₽</span></p>
-          <p class="course__description">
-            Курс General Management программы MBA предназначен для подготовки
-            элитных руководителей, которые владеют фундаментальными знаниями
-            о современном состоянии экономики, обладают глубоким пониманием
-            логики стратегического...
-          </p>
-        </div>
-        <div class="course__sidebar sidebar">
-          <p class="sideba__title">Партнер</p>
-
-          <div class="sidebar__partner">
-            <a href="#" class="sidebar__partner-img-link">
-              <img src="img/course-partner-logo@2x.png" alt="Государственный университет
-              управления" class="sidebar__partner-img">
-            </a>
-            <p class="sidebar__partner-title">
-              <a href="#" class="sidebar__partner-link">KRON</a>
-            </p>
-          </div>
-          <div class="sidebar__details">
-            <p class="sidebar__sidebar-title">Детали стажировки</p>
-            <ul class="sidebar__details-list">
-              <li class="sidebar__details-item sidebar__details-item--duration">
-                <p class="sidebar__details-title">Продолжительность</p>
-                <p class="sidebar__details-info">1-3 месяца</p>
-              </li>
-              <li class="sidebar__details-item sidebar__details-item--format">
-                <p class="sidebar__details-title">Тип стажировки</p>
-                <p class="sidebar__details-info">Удаленная</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="course__teacher teacher">
-          <p class="teacher__title">Преподаватели</p>
-          <ul class="teacher__list">
-            <li class="teacher__item">
-              <a href="#" class="teacher__img-link">
-                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
-              </a>
-
-              <a href="#" class="teacher__link">Валентин Пановский</a>
-            </li>
-
-            <li class="teacher__item">
-              <a href="#" class="teacher__img-link">
-                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
-              </a>
-
-              <a href="#" class="teacher__link">Валентин Пановский</a>
-            </li>
-
-            <li class="teacher__item">
-              <a href="#" class="teacher__img-link">
-                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
-              </a>
-
-              <a href="#" class="teacher__link">Валентин Пановский</a>
-            </li>
-
-            <li class="teacher__item">
-              <a href="#" class="teacher__img-link">
-                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
-              </a>
-
-              <a href="#" class="teacher__link">Валентин Пановский</a>
-            </li>
-
-            <li class="teacher__item">
-              <a href="#" class="teacher__img-link">
-                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
-              </a>
-
-              <a href="#" class="teacher__link">Валентин Пановский</a>
-            </li>
-          </ul>
-        </div>
-        <div class="course__programm">
-          <p class="course__programm-title">Программа курса</p>
-          <ul class="course__programm-list">
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-            <li class="course__programm__item">
-              <p class="course__lesson-title">Python для Data Science</p>
-              <p class="course__lesson-duration">8 ч.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="course__certificate">
-          <p class="course__sidebar-title course__sidebar-title--big">Ваш сертификат</p>
-          <a href="#" class="course__certificate__img-link">
-            <img src="img/certificate.jpg" alt="Сертификат курса МВА – GENERAL MANAGEMENT"
-              class="course__certificate-img">
-          </a>
-        </div>
-        <div class="course__payment">
-          <a href="#" class="course__payment-btn">Оплатить обучение</a>
-        </div>
-        <div class="course__review review">
-          <h2 class="review__title">
-            Ваши отзывы
-            <span class="review__stats">(143 отзыва)</span>
-          </h2>
-          <ul class="review__list">
-            <li class="review__item">
-              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
-              <div class="review__info">
-                <h3 class="review__fullname">Валентин Пановский</h3>
-                <p class="review__prof">Инженер</p>
-              </div>
-              <p class="review__text">
-                Проходил этот курс остался довольный. Получил
-                новые знания по тому-то и тому-то
+    <div class="profession container">
+      <div class="profession__block-filter block-filter block-filter--mobile-hide">
+        <h2 class="block-filter__title">Выберите темы которые интересны</h2>
+        <ul class="block-filter__list">
+          <li class="block-filter__item">
+            <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+            <label class="block-filter__label" for="blockchain">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="block-filter__name">Блокчейн</span>
+            </label>
+          </li>
+          <li class="block-filter__item">
+            <input class="block-filter__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
+            <label class="block-filter__label" for="blockchain1">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="block-filter__name">Блокчейн</span>
+            </label>
+          </li>
+          <li class="block-filter__item">
+            <input class="block-filter__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
+            <label class="block-filter__label" for="blockchain3">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+              </picture>
+              <span class="block-filter__name">Блокчейн</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+        <div class="course-all__block">
+          <form action="">
+            <input class="course-all__search" type="search" placeholder="Поиск по курсам">
+            <div class="course-all__button-box">
+              <button class="course-all__btn-options" type="button">
+                <img src="img/favicon/settings.svg" alt="">
+              </button>
+              <button class="course-all__btn-frontend" type="button">Frontend</button>
+              <button class="course-all__btn-backend" type="button">Backend</button>
+            </div>
+          </form>
+          <ul class="profession__block-courses block-courses">
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
               </p>
-            </li>
-            <li class="review__item">
-              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
-              <div class="review__info">
-                <h3 class="review__fullname">Валентин Пановский</h3>
-                <p class="review__prof">Инженер</p>
-              </div>
-              <p class="review__text">
-                Проходил этот курс остался довольный. Получил
-                новые знания по тому-то и тому-то
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
               </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
             </li>
-            <li class="review__item">
-              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
-              <div class="review__info">
-                <h3 class="review__fullname">Валентин Пановский</h3>
-                <p class="review__prof">Инженер</p>
-              </div>
-              <p class="review__text">
-                Проходил этот курс остался довольный. Получил
-                новые знания по тому-то и тому-то
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
               </p>
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
+              </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
+            </li>
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
+              </p>
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
+              </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
+            </li>
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
+              </p>
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
+              </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
+            </li>
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
+              </p>
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
+              </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
+            </li>
+            <li class="block-courses__item">
+              <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+              <p class="block-courses__price">
+                700 000 ₽
+                <span class="block-courses__term">
+                  23 месяца
+                </span>
+              </p>
+              <p class="block-courses__title">
+                Философия искусственного интеллекта
+              </p>
+              <a class="block-courses__link btn" href="#">Подробнее</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 
     <!-- Similar courses  -->
     <section class="carousel carousel--full">
@@ -452,8 +410,128 @@
     </section>
     <!-- Similar courses END-->
 
+=======
+    <section class="popup-cookie popup-cookie--hidden">
+      <div class="popup-cookie__block">
+        <p class="popup-cookie__text">
+          Мы, как и все,
+          используем <a class="popup-cookie__link" id="cookie" href="#">cookie</a>
+        </p>
+        <button class="popup-cookie__button btn" id="app">Я понимаю</button>
+      </div>
+    </section>
+    <section class="popup-cookie-info popup-cookie-info--hidden">
+      <div class="popup-cookie-info__block">
+        <h2 class="popup-cookie-info__title">Сookie</h2>
+        <button class="popup-cookie-info__close" type="button"></button>
+        <p class="popup-cookie-info__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-app popup-app--hidden">
+      <div class="popup-app__block">
+        <button class="popup-app__close" type="button"></button>
+        <p class="popup-app__slogan">Удобнее искать знания в приложении</p>
+        <p class="popup-app__text">
+          Скачайте мобильное приложение
+          Sokrat., чтобы иметь самый быстрый
+          доступ к новым курсам.
+        </p>
+        <div class="popup-app__links">
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--store" src="img/app-store-btn.svg" alt="Скачать с App Store" width="200" height="67">
+          </a>
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--google" src="img/google-play-btn.svg" alt="Скачать Google Play" width="247" height="67">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="popup-compare popup-compare--hidden">
+      <div class="popup-compare__block">
+        <h2 class="popup-compare__title">Сравните курсы</h2>
+        <button class="popup-compare__close" type="button">Добавить курс</button>
+        <ul class="popup-compare__list">
+          <li class="popup-compare__item popup-compare__item--titles">
+            <p class="popup-compare__title-name">Название курса</p>
+            <p class="popup-compare__title-name">Прожолжительность</p>
+            <p class="popup-compare__title-name">Цена</p>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="popup-confidentiality popup-confidentiality--hidden">
+      <div class="popup-confidentiality__block">
+        <h2 class="popup-confidentiality__title">Frontend Developer</h2>
+        <button class="popup-confidentiality__close" type="button"></button>
+        <p class="popup-confidentiality__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-conditions popup-conditions--hidden">
+      <div class="popup-conditions__block">
+        <h2 class="popup-conditions__title">Условия использования</h2>
+        <button class="popup-conditions__close" type="button"></button>
+        <p class="popup-conditions__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+>>>>>>> d03cb2d5c18015d9327a585e806e8f3c5e2776d0
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__col-wrapper">
@@ -543,11 +621,16 @@
     <div class="bottom-bar">
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
+<<<<<<< HEAD
           <li class="bottom-bar__nav-item">
             <a href="#" class="bottom-bar__nav-link">Условия использования</a>
+=======
+            <li class="bottom-bar__nav-item">
+            <a href="#" class="bottom-bar__nav-link" id="conditions">Условия использования</a>
+>>>>>>> d03cb2d5c18015d9327a585e806e8f3c5e2776d0
           </li>
           <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link">Политика конфиденциальности</a>
+            <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
           </li>
         </ul>
 
@@ -556,9 +639,13 @@
       </div>
     </div>
   </footer>
+<<<<<<< HEAD
   <script src="js/vendor.js"></script>
   <script src="js/form-popup.js"></script>
   <script src="js/script.js"></script>
+=======
+  <script src="js/script.js"  type="module"></script>
+>>>>>>> d03cb2d5c18015d9327a585e806e8f3c5e2776d0
 </body>
 
 </html>

@@ -12,10 +12,9 @@
 @import "blocks/main-nav.scss";
 @import "blocks/main-slider.scss";
 @import "blocks/carousel.scss";
-@import "blocks/category.scss";
+@import "blocks/block-filter.scss";
 @import "blocks/cta.scss";
 @import "blocks/partners.scss";
-@import "blocks/modals.scss";
 @import "blocks/socials.scss";
 @import "blocks/download.scss";
 @import "blocks/footer.scss";
@@ -28,7 +27,17 @@
 @import "blocks/swiper.scss";
 @import "blocks/skills.scss";
 @import "blocks/practice.scss";
-@import "blocks/popup.scss";
+@import "blocks/popup-payment.scss";
+@import "blocks/popup-work.scss";
+@import "blocks/popup-confidentiality.scss";
+@import "blocks/popup-conditions.scss";
+@import "blocks/popup-congratulation.scss";
+@import "blocks/popup-cookie.scss";
+@import "blocks/popup-cookie-info.scss";
+@import "blocks/popup-app.scss";
+@import "blocks/popup-category.scss";
+@import "blocks/popup-compare.scss";
+@import "blocks/popup-promotion.scss";
 @import "blocks/fieldset.scss";
 @import "blocks/input.scss";
 @import "blocks/practice.scss";
@@ -42,3 +51,4 @@
 @import "blocks/sidebar.scss";
 @import "blocks/block-list.scss";
 @import "blocks/products.scss";
+@import "blocks/block-courses.scss";
