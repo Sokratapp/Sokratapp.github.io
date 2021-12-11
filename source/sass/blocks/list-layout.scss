@@ -1,10 +1,26 @@
-.theme {
+//переименован из theme
+.list-layout {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
   background-color: $white;
 
   @media (min-width: $desktop) {
+    margin-top: 66px;
+    margin-bottom: 142px;
     display: grid;
     grid-template-columns: 373px 1fr;
     column-gap: 52px;
+  }
+}
+
+.list-layout__block-filter {
+  min-height: 170px;
+  padding: 11px 24px 12px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    padding: 12px 26px;
   }
 }
 

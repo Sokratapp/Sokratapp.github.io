@@ -31,11 +31,6 @@
 </head>
 
 <body>
-
-  <!-- <div style="display:none">
-    <include src="source/img/sprite_auto.svg"></include>
-  </div> -->
-
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-instagram" viewBox="0 0 31 31">
@@ -76,7 +71,7 @@
           Ищите знания<br>
           в приложении Sokrat.
         </p>
-        <a href="#" class="btn btn--pink" id="app">Скачать</a>
+        <a href="#" class="btn btn--pink">Скачать</a>
       </div>
     </div>
     <div class="header__wrapper">
@@ -92,7 +87,7 @@
           </form>
         </div>
         <div class="user">
-          <div class="user__bookmark" id="compare">
+          <div class="user__bookmark">
             <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
           </div>
           <div class="user__login">
@@ -105,7 +100,6 @@
         </div>
       </div>
     </div>
-
     <div class="main-nav main-nav--closed" aria-label="Навигация по сайту">
       <button class="main-nav__toggle" type="button">
         <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
@@ -130,17 +124,17 @@
     </div>
   </header>
   <main class="main">
-    <header class="page-header page-header--practices" aria-label="Все вакансии">
+    <header class="page-header page-header--courses" aria-label="Все курсы">
       <div class="page-header__plug-img"></div>
     </header>
 
-    <div class="theme container">
-      <div class="block-filter" aria-label="Выбор категорий вакансий">
-        <h2 class="block-filter__title block-filter__title--practices">Выберите категорию</h2>
-        <ul class="block-filter__list block-filter__list--practices">
+    <div class="list-layout container">
+      <div class="list-layout__block-filter block-filter" aria-label="Выбор категорий курсов">
+        <h2 class="block-filter__title">Мои категории</h2>
+        <ul class="block-filter__list">
           <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain1">
+            <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+            <label class="block-filter__label" for="blockchain">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -149,8 +143,8 @@
             </label>
           </li>
           <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain2" type="checkbox" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain2">
+            <input class="block-filter__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
+            <label class="block-filter__label" for="blockchain1">
               <picture>
                 <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                 <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
@@ -199,163 +193,42 @@
             </label>
           </li>
         </ul>
+        <a class="block-filter__all btn btn--courses" href="#">Все категории</a>
       </div>
-      <div class="course-all__block">
-        <form class="course-all__form" action="">
-          <input class="course-all__search" type="search" placeholder="Поиск по вакансиям">
+      <div class="list-layout__block-list block-list">
+        <form class="block-list__form" action="">
+          <input class="block-list__search" type="search" placeholder="Поиск по курсам">
         </form>
-        <ul class="course-all__block-courses block-courses">
-          <li class="block-courses__item">
-            <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="block-courses__price">
+        <ul class="block-list__products products">
+          <li class="products__item">
+            <img class="products__img products__img--courses" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price products__price--courses">
               700 000 ₽
+              <span class="products__term">
+                23 месяца
+              </span>
             </p>
-            <p class="block-courses__title">
-              Frontend Developer
+            <p class="products__title products__title--courses">
+              Философия искусственного интеллекта
             </p>
-            <p class="block-courses__description">
-              Описание вакансии выдаем в две
-              строчки с многоточием...
-            </p>
-            <a class="block-courses__link btn btn--practices" href="#">Подробнее</a>
+            <a class="products__link products__link--courses btn" href="#">Подробнее</a>
           </li>
-          <li class="block-courses__item">
-            <img class="block-courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-            <p class="block-courses__price">
+          <li class="products__item">
+            <img class="products__img products__img--courses" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
+            <p class="products__price products__price--courses">
               700 000 ₽
+              <span class="products__term">
+                23 месяца
+              </span>
             </p>
-            <p class="block-courses__title">
-              Frontend Developer
+            <p class="products__title products__title--courses">
+              Философия искусственного интеллекта
             </p>
-            <p class="block-courses__description">
-              Описание вакансии выдаем в две
-              строчки с многоточием...
-            </p>
-            <a class="block-courses__link btn btn--practices" href="#">Подробнее</a>
+            <a class="products__link products__link--courses btn" href="#">Подробнее</a>
           </li>
         </ul>
-        <a class="course-all__more btn btn--practices" href="#">Показать еще</a>
       </div>
     </div>
-    <section class="popup-cookie popup-cookie--hidden">
-      <div class="popup-cookie__block">
-        <p class="popup-cookie__text">
-          Мы, как и все,
-          используем <a class="popup-cookie__link" id="cookie" href="#">cookie</a>
-        </p>
-        <button class="popup-cookie__button btn" id="app">Я понимаю</button>
-      </div>
-    </section>
-    <section class="popup-cookie-info popup-cookie-info--hidden">
-      <div class="popup-cookie-info__block">
-        <h2 class="popup-cookie-info__title">Сookie</h2>
-        <button class="popup-cookie-info__close" type="button"></button>
-        <p class="popup-cookie-info__text">
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-        </p>
-      </div>
-    </section>
-    <section class="popup-app popup-app--hidden">
-      <div class="popup-app__block">
-        <button class="popup-app__close" type="button"></button>
-        <p class="popup-app__slogan">Удобнее искать знания в приложении</p>
-        <p class="popup-app__text">
-          Скачайте мобильное приложение
-          Sokrat., чтобы иметь самый быстрый
-          доступ к новым курсам.
-        </p>
-        <div class="popup-app__links">
-          <a class="popup-app__link" href="#">
-            <img class="popup-app__img popup-app__img--store" src="img/app-store-btn.svg" alt="Скачать с App Store" width="200" height="67">
-          </a>
-          <a class="popup-app__link" href="#">
-            <img class="popup-app__img popup-app__img--google" src="img/google-play-btn.svg" alt="Скачать Google Play" width="247" height="67">
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="popup-compare popup-compare--hidden">
-      <div class="popup-compare__block">
-        <h2 class="popup-compare__title">Сравните курсы</h2>
-        <button class="popup-compare__close" type="button">Добавить курс</button>
-        <ul class="popup-compare__list">
-          <li class="popup-compare__item popup-compare__item--titles">
-            <p class="popup-compare__title-name">Название курса</p>
-            <p class="popup-compare__title-name">Прожолжительность</p>
-            <p class="popup-compare__title-name">Цена</p>
-          </li>
-          <li class="popup-compare__item">
-            <p class="popup-compare__name">Мва – general management</p>
-            <p class="popup-compare__duration">4 месяца</p>
-            <p class="popup-compare__price">100.000</p>
-            <button class="popup-compare__btn btn">Купить курс</button>
-          </li>
-          <li class="popup-compare__item">
-            <p class="popup-compare__name">Мва – general management</p>
-            <p class="popup-compare__duration">4 месяца</p>
-            <p class="popup-compare__price">100.000</p>
-            <button class="popup-compare__btn btn">Купить курс</button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="popup-confidentiality popup-confidentiality--hidden">
-      <div class="popup-confidentiality__block">
-        <h2 class="popup-confidentiality__title">Frontend Developer</h2>
-        <button class="popup-confidentiality__close" type="button"></button>
-        <p class="popup-confidentiality__text">
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-        </p>
-      </div>
-    </section>
-    <section class="popup-conditions popup-conditions--hidden">
-      <div class="popup-conditions__block">
-        <h2 class="popup-conditions__title">Условия использования</h2>
-        <button class="popup-conditions__close" type="button"></button>
-        <p class="popup-conditions__text">
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
-        </p>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
@@ -366,6 +239,9 @@
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
               <a href="#" class="footer__nav-link">Все курсы</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Консультант</a>
             </li>
             <li class="footer__nav-item">
               <a href="#" class="footer__nav-link">Оплата обучения</a>
@@ -445,10 +321,10 @@
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
             <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link" id="conditions">Условия использования</a>
+            <a href="#" class="bottom-bar__nav-link">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
-            <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
+            <a href="#" class="bottom-bar__nav-link">Политика конфиденциальности</a>
           </li>
         </ul>
 
@@ -457,7 +333,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js" type="module"></script>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
