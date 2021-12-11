@@ -2,52 +2,31 @@ $block-filter-list-item-size-mobile: 91px;
 $block-filter-list-item-size-desktop: 99px;
 
 .block-filter {
-  grid-area: category;
-
   height: fit-content;
-  margin-bottom: 20px;
-  padding-top: 18px;
-  padding-bottom: 28px;
-  padding-right: 25px;
-  padding-left: 27px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
+  border-radius: 10px;
   background-color: $white;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
-
-  @media (max-width: $mobile) {
-    margin-right: 16px;
-    margin-left: 16px;
-    padding-top: 9px;
-    padding-right: 23px;
-    padding-left: 23px;
-  }
 }
 
 .block-filter__title {
   margin-top: 0;
-  margin-bottom: 40px;
-  padding: 0;
+  margin-bottom: 9px;
+  padding-left: 3px;
 
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 700;
-  text-align: center;
+  font: 700 18px/22px $body-font-family;
 
-  @media (max-width: $mobile) {
-    margin-bottom: 9px;
-    padding-left: 6px;
-
-    font-size: 18px;
-    line-height: 24px;
-    text-align: start;
+  @media (min-width: $desktop) {
+    font: 700 20px/24px $body-font-family;
   }
 }
 
 .block-filter__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-mobile);
-  row-gap: 16px;
+  row-gap: 15px;
   column-gap: 11px;
   justify-content: start;
 
@@ -133,4 +112,12 @@ $block-filter-list-item-size-desktop: 99px;
   line-height: 14px;
   font-weight: 700;
   text-align: center;
+}
+
+.block-filter__all {
+  margin-top: 12px;
+  padding: 6px 89px 3px 79px;
+  margin-bottom: -5px;
+
+  font-size: 12px;
 }
