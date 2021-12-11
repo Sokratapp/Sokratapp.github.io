@@ -3,20 +3,10 @@ $category-list-item-size-mobile: 91px;
 $category-list-item-size-desktop: 99px;
 
 .category {
-  height: fit-content;
-  min-height: 170px;
-  padding: 13px 0 14px 24px;
-  // padding: 13px 25px 92px;
-  margin-bottom: 20px;
-
   border-radius: 10px;
 
   background-color: $white;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
-
-  @media (min-width: $desktop) {
-    padding: 12px 22px;
-  }
 }
 
 // .category--mobile-hide {
