@@ -8,15 +8,30 @@
     background-image:
     url("../img/practices-header-bg.svg"),
     url("../img/icons/logo-socrat.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 224px 263px, 275px 52px;
-  background-position: 50% 100%, 55% 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 224px 263px, 275px 52px;
+    background-position: 50% 100%, 55% 10%;
 
-  @media (min-width: $desktop) {
-    background-size: 277px 325px, 476px 100px;
-    background-position: 50% 100%, 50% 10%;
+    @media (min-width: $desktop) {
+      background-size: 277px 325px, 476px 100px;
+      background-position: 50% 100%, 50% 10%;
     }
   }
+
+  &--courses {
+    background-image:
+    url("../img/courses-header-bg.svg"),
+    url("../img/icons/logo-socrat.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 339px 247px, 275px 52px;
+    background-position: 50% 100%, 55% 10%;
+
+    @media (min-width: $desktop) {
+      background-size: 544px 397px, 476px 100px;
+      background-position: 50% 100%, 50% 10%;
+    }
+  }
+
 }
 
 .page-header__plug-img {

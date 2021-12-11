@@ -128,8 +128,11 @@
       </nav>
       <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
+
   </header>
+
   <main class="main">
+
     <header class="page-header">
       <div class="page-header__plug-img">
         <button class="page-header__add-list">
@@ -145,140 +148,310 @@
             </g>
           </svg>
         </button>
-        <img src="img/slogan.png" alt="Начни учиться в Sokrart." class="page-header__logo">
-        <img src="img/practice-card.png" alt="" class="page-header__course-img">
+        <img src="img/page-header-logo.png" alt="Начни учиться в Sokrart." class="page-header__logo">
+        <img src="img/page-course-img.svg" alt="" class="page-header__course-img">
       </div>
     </header>
 
-    <div class="profession container">
-      <div class="profession__category category category--mobile-hide">
-        <h2 class="category__title">Выберите темы которые интересны</h2>
-        <ul class="category__list">
-          <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="category__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain1">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="category__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="category__item">
-            <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-            <label class="category__label" for="blockchain3">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="category__name">Блокчейн</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-        <div class="course-all__block">
-          <form action="">
-            <input class="course-all__search" type="search" placeholder="Поиск по курсам">
-            <div class="course-all__button-box">
-              <button class="course-all__btn-options" type="button">
-                <img src="img/favicon/settings.svg" alt="">
-              </button>
-              <button class="course-all__btn-frontend" type="button">Frontend</button>
-              <button class="course-all__btn-backend" type="button">Backend</button>
-            </div>
-          </form>
-          <ul class="profession__courses courses">
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
+    <div class="course">
+      <div class="course__wrapper">
+        <div class="course__info">
+          <h1 class="course__title">МВА – GENERAL MANAGEMENT</h1>
+          <p class="course__price">Стоимость обучения <span>700 000 ₽</span></p>
+          <p class="course__description">
+            Курс General Management программы MBA предназначен для подготовки
+            элитных руководителей, которые владеют фундаментальными знаниями
+            о современном состоянии экономики, обладают глубоким пониманием
+            логики стратегического...
+          </p>
+        </div>
+        <div class="course__sidebar sidebar">
+          <p class="sideba__title">Партнер</p>
+
+          <div class="sidebar__partner">
+            <a href="#" class="sidebar__partner-img-link">
+              <img src="img/course-partner-logo@2x.png" alt="Государственный университет
+              управления" class="sidebar__partner-img">
+            </a>
+            <p class="sidebar__partner-title">
+              <a href="#" class="sidebar__partner-link">KRON</a>
+            </p>
+          </div>
+          <div class="sidebar__details">
+            <p class="sidebar__sidebar-title">Детали стажировки</p>
+            <ul class="sidebar__details-list">
+              <li class="sidebar__details-item sidebar__details-item--duration">
+                <p class="sidebar__details-title">Продолжительность</p>
+                <p class="sidebar__details-info">1-3 месяца</p>
+              </li>
+              <li class="sidebar__details-item sidebar__details-item--format">
+                <p class="sidebar__details-title">Тип стажировки</p>
+                <p class="sidebar__details-info">Удаленная</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course__teacher teacher">
+          <p class="teacher__title">Преподаватели</p>
+          <ul class="teacher__list">
+            <li class="teacher__item">
+              <a href="#" class="teacher__img-link">
+                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
+              </a>
+
+              <a href="#" class="teacher__link">Валентин Пановский</a>
             </li>
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
+
+            <li class="teacher__item">
+              <a href="#" class="teacher__img-link">
+                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
+              </a>
+
+              <a href="#" class="teacher__link">Валентин Пановский</a>
             </li>
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
+
+            <li class="teacher__item">
+              <a href="#" class="teacher__img-link">
+                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
+              </a>
+
+              <a href="#" class="teacher__link">Валентин Пановский</a>
             </li>
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
+
+            <li class="teacher__item">
+              <a href="#" class="teacher__img-link">
+                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
+              </a>
+
+              <a href="#" class="teacher__link">Валентин Пановский</a>
             </li>
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
-            </li>
-            <li class="courses__item">
-              <img class="courses__img" src="img/slider-placeholder.jpg" width="282" height="151" alt="">
-              <p class="courses__price">
-                700 000 ₽
-                <span class="courses__term">
-                  23 месяца
-                </span>
-              </p>
-              <p class="courses__title">
-                Философия искусственного интеллекта
-              </p>
-              <a class="courses__link btn" href="#">Подробнее</a>
+
+            <li class="teacher__item">
+              <a href="#" class="teacher__img-link">
+                <img src="img/teacher-photo.jpg" alt="Преподаватель Валентин Пановский" class="teacher__img">
+              </a>
+
+              <a href="#" class="teacher__link">Валентин Пановский</a>
             </li>
           </ul>
         </div>
+        <div class="course__programm">
+          <p class="course__programm-title">Программа курса</p>
+          <ul class="course__programm-list">
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+            <li class="course__programm__item">
+              <p class="course__lesson-title">Python для Data Science</p>
+              <p class="course__lesson-duration">8 ч.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="course__certificate">
+          <p class="course__sidebar-title course__sidebar-title--big">Ваш сертификат</p>
+          <a href="#" class="course__certificate__img-link">
+            <img src="img/certificate.jpg" alt="Сертификат курса МВА – GENERAL MANAGEMENT"
+              class="course__certificate-img">
+          </a>
+        </div>
+        <div class="course__payment">
+          <a href="#" class="course__payment-btn">Оплатить обучение</a>
+        </div>
+        <div class="course__review review">
+          <h2 class="review__title">
+            Ваши отзывы
+            <span class="review__stats">(143 отзыва)</span>
+          </h2>
+          <ul class="review__list">
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+            <li class="review__item">
+              <img class="review__avatar" src="img/teacher-photo.jpg" width="37" height="37" alt="">
+              <div class="review__info">
+                <h3 class="review__fullname">Валентин Пановский</h3>
+                <p class="review__prof">Инженер</p>
+              </div>
+              <p class="review__text">
+                Проходил этот курс остался довольный. Получил
+                новые знания по тому-то и тому-то
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <!-- Similar courses  -->
+    <section class="carousel carousel--full">
+
+      <div class="carousel__wrapper">
+        <h2 class="carousel__title">Еще курсы по этой теме</h2>
+
+        <div class="carousel__list">
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/slider-placeholder.jpg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__btn-next"></div>
+          <div class="carousel__btn-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popup popup--hidden">
+      <form class="popup__form" action="">
+        <h2 class="popup__title">Оплата курса</h2>
+        <button class="popup__close" type="button"></button>
+        <fieldset class="popup__fieldset fieldset">
+          <legend class="fieldset__title">Контактные данные</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="last-name">Ваша фамилия</label>
+              <input class="input__field" type="text" id="last-name" placeholder="Введите вашу фамилию">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="first-name">Введите ваше имя</label>
+              <input class="input__field" type="text" id="first-name" placeholder="Ваше имя">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="patronomic">Введите ваше отчество</label>
+              <input class="input__field" type="text" id="patronomic" placeholder="Ваше отчество">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="phone">Ваш номер телефона</label>
+              <input class="input__field" type="number" id="phone" placeholder="+7 (920) 123 45 67">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="email">Ваш email</label>
+              <input class="input__field" type="email" id="email" placeholder="Введите вашу почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup__fieldset fieldset">
+          <legend class="fieldset__title">Данные о курсе</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-id">id курса</label>
+              <input class="input__field" type="number" id="course-id" value="123456" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-name">Название курса</label>
+              <input class="input__field" type="text" id="course-name" value="Философия искусственного интеллекта" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="partner">Партнер курса</label>
+              <input class="input__field" type="text" id="partner" value="Skillbox" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup__fieldset fieldset fieldset--pay">
+          <legend class="fieldset__title">Способ оплаты</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input input--pay">
+              <input class="input__field" type="text" value="Оплата с помощью карты" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="popup__info">
+          Нажимая оплатить, вы соглашаетесь
+          с нашей <a class="popup__confidentiality" href="#">Политикой конфиденциальности</a>
+        </p>
+        <button class="popup__button-pay btn btn--disabled" type="submit" disabled>Оплатить <b class="popup__price">140 000 ₽</b></button>
+      </form>
+    </section>
+    <!-- Similar courses END-->
+
   </main>
 
   <footer class="footer">
@@ -370,7 +543,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
-            <li class="bottom-bar__nav-item">
+          <li class="bottom-bar__nav-item">
             <a href="#" class="bottom-bar__nav-link">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">
@@ -383,10 +556,9 @@
       </div>
     </div>
   </footer>
-
   <script src="js/vendor.js"></script>
+  <script src="js/form-popup.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 
 </html>
