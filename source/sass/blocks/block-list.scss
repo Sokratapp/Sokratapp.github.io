@@ -17,7 +17,7 @@
 
 .block-list__search {
   width: 100%;
-  padding: 16px 47px 16px 24px;
+  padding: 17px 47px 14px 24px;
 
   color: $black;
   font: 400 13px/16px $body-font-family;
@@ -55,10 +55,11 @@
 }
 
 .block-list__more {
-    display: none;
+  display: none;
+
   @media (min-width: $desktop) {
     display: inline-flex;
-    margin-top: 58px;
+    margin-top: 44px;
     margin-left: 367px;
     margin-right: auto;
     padding-top: 8px;
