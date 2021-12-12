@@ -10,6 +10,7 @@ import './popup-app.js';
 import './popup-category.js';
 import './popup-compare.js';
 import './popup-promotion.js';
+import './search.js';
 
 let swiper = new Swiper(".mySwiper", {
   pagination: {
