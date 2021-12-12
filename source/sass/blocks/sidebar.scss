@@ -1,3 +1,11 @@
+.sidebar {
+  @media (max-width: $mobile) {
+    margin-bottom: 7px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .sidebar__title {
   margin-top: 0;
   margin-bottom: 17px;
@@ -7,11 +15,9 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 9px;
-    padding-top: 8px;
-    border-top: 1px solid $black;
 
-    font-size: 10px;
-    line-height: 9px;
+    font-size: 15px;
+    line-height: 15px;
   }
 }
 
@@ -107,6 +113,7 @@
   @media (max-width: $mobile) {
     min-height: 64px;
     padding-left: 64px;
+    margin-bottom: 13px;
 
     &::before {
       width: 44px;
