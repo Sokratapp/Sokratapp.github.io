@@ -19,6 +19,8 @@
   }
 
   @media (max-width: $mobile) {
+    position: relative;
+
     min-height: 73px;
     align-items: center;
     padding: 11px 16px;

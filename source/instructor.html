@@ -79,11 +79,12 @@
         <a class="logo" href="index.html">
           <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
         </a>
-        <div class="search">
+        <div class="search search--hidden">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
             <label class="visually-hidden" for="search__input">Поиск по курсам</label>
             <input class="search__input" id="search__input" type="text" placeholder="Поиск по курсам" value="" name="s">
             <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
+            <button class="search__close-btn" type="button" id="search__close-btn"></button>
           </form>
         </div>
         <div class="user">
@@ -96,6 +97,9 @@
           </div>
           <div class="user__photo">
             <img src="img/camera-icon.svg" alt="" class="user__photo-img" width="16" height="14">
+          </div>
+          <div class="user__search" id="search">
+            <img src="img/search-icon.svg" alt="" class="user__search-img" width="31" height="20">
           </div>
         </div>
       </div>
@@ -317,6 +321,7 @@
             <a class="block-courses__link btn" href="#">Подробнее</a>
           </li>
         </ul>
+        <button class="block-courses__btn btn">Показать еще</button>
       </div>
     </section>
     <section class="popup-cookie popup-cookie--hidden">
