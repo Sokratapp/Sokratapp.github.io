@@ -3,6 +3,7 @@
   grid-template-columns: 343px;
   row-gap: 30px;
   justify-content: center;
+  list-style: none;
 
   @media (min-width: $mobile) {
     justify-content: start;
@@ -10,7 +11,12 @@
     row-gap: 24px;
     column-gap: 20px;
   }
-  list-style: none;
+
+  &--courses {
+    @media (min-width: $mobile) {
+      row-gap: 38px;
+    }
+  }
 }
 
 .products__item {
@@ -29,6 +35,10 @@
 
   &--courses {
     margin-bottom: 14px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 27px;
+    }
   }
 }
 
@@ -43,6 +53,10 @@
 
   &--courses {
     margin-bottom: 19px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -75,6 +89,10 @@
 
   &--courses {
     margin-bottom: 29px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -97,7 +115,7 @@
   padding-top: 9px;
   padding-bottom: 5px;
 
-  font: 700 17px/20px $body-font-family;
+  font: 500 15px/20px $body-font-family;
 
   @media (min-width: $desktop) {
     padding-top: 8px;
@@ -106,7 +124,8 @@
 
   &--courses {
     padding-top: 11px;
-    padding-bottom: 10px;
-    border-radius: 7px;
+    padding-bottom: 7px;
+    border-radius: 11px;
+    margin-bottom: 5px;
   }
 }

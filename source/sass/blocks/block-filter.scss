@@ -120,4 +120,12 @@ $block-filter-list-item-size-desktop: 99px;
   margin-bottom: -5px;
 
   font-size: 12px;
+
+  @media (min-width: $desktop) {
+    margin-top: 15px;
+    padding: 12px 84px 8px;
+
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
