@@ -5,21 +5,37 @@ $block-filter-list-item-size-desktop: 99px;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
 
   border-radius: 10px;
   background-color: $white;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
+
+  @media (max-width: $mobile) {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 
 .block-filter__title {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 40px;
   padding-left: 3px;
+  align-self: center;
 
   font: 700 18px/22px $body-font-family;
 
   @media (min-width: $desktop) {
     font: 700 20px/24px $body-font-family;
+  }
+
+  @media (max-width: $mobile) {
+    align-self: start;
+    margin-bottom: 10px;
   }
 }
 
@@ -28,7 +44,7 @@ $block-filter-list-item-size-desktop: 99px;
   grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-mobile);
   row-gap: 15px;
   column-gap: 11px;
-  justify-content: start;
+  justify-content: center;
 
 
   margin-bottom: 0;
@@ -43,6 +59,10 @@ $block-filter-list-item-size-desktop: 99px;
     grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-desktop);
     column-gap: 12px;
     row-gap: 19px;
+  }
+
+  @media (max-width: $mobile) {
+    justify-content: start;
   }
 }
 

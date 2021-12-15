@@ -18,7 +18,7 @@
   display: block;
   margin-bottom: 6px;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 9px;
   font-weight: 400;
 
@@ -37,4 +37,10 @@
   font-weight: 700;
 
   outline: none;
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
