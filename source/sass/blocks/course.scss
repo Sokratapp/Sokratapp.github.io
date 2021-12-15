@@ -233,7 +233,9 @@
 }
 
 .course__lesson-title {
-  font-size: 10px;
+  width: 200px;
+
+  font-size: 13px;
   font-weight: bold;
   line-height: 1.2;
 
@@ -246,11 +248,12 @@
 }
 
 .course__lesson-duration {
-  margin-top: 12px;
+  align-self: center;
+  margin-top: 0;
   margin-bottom: 0;
   margin-right: 4px;
 
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 1.2;
   color: $main-color;

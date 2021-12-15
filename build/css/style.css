@@ -617,6 +617,15 @@ img {
     .search__submit-btn {
       padding-right: 5px;
       padding-left: 5px; } }
+  @media (max-width: 768px) {
+    .search__submit-btn {
+      width: 40px;
+      font-size: 0;
+      background-image: url("../img/search-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: 50%;
+      background-color: transparent; } }
 
 .search__close-btn {
   display: none; }
@@ -1161,19 +1170,35 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 768px) {
+    .block-filter {
+      margin-right: 16px;
+      margin-left: 16px; } }
 
 .block-filter__title {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 40px;
   padding-left: 3px;
+  -ms-flex-item-align: center;
+      align-self: center;
   font: 700 18px/22px "Gotham pro", "Arial", sans-serif; }
   @media (min-width: 1366px) {
     .block-filter__title {
       font: 700 20px/24px "Gotham pro", "Arial", sans-serif; } }
+  @media (max-width: 768px) {
+    .block-filter__title {
+      -ms-flex-item-align: start;
+          align-self: start;
+      margin-bottom: 10px; } }
 
 .block-filter__list {
   display: grid;
@@ -1182,9 +1207,9 @@ img {
   -webkit-column-gap: 11px;
      -moz-column-gap: 11px;
           column-gap: 11px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
@@ -1198,6 +1223,11 @@ img {
          -moz-column-gap: 12px;
               column-gap: 12px;
       row-gap: 19px; } }
+  @media (max-width: 768px) {
+    .block-filter__list {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start; } }
 
 .block-filter__label {
   position: relative;
@@ -2042,7 +2072,8 @@ img {
       padding-left: 10px; } }
 
 .course__lesson-title {
-  font-size: 10px;
+  width: 200px;
+  font-size: 13px;
   font-weight: bold;
   line-height: 1.2; }
   @media (max-width: 768px) {
@@ -2052,10 +2083,12 @@ img {
       line-height: 14px; } }
 
 .course__lesson-duration {
-  margin-top: 12px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 0;
   margin-bottom: 0;
   margin-right: 4px;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 1.2;
   color: #00A7CF; }
@@ -2628,6 +2661,15 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 29px 0 rgba(36, 39, 45, 0.1);
           box-shadow: 0 0 29px 0 rgba(36, 39, 45, 0.1); }
+  .popup-payment__form::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent; }
+  .popup-payment__form::-webkit-scrollbar-track {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
+    background-image: linear-gradient(to right, transparent 45%, #24272D 45%, #24272D 55%, transparent 55%); }
+  .popup-payment__form::-webkit-scrollbar-thumb {
+    background-color: #00A7CF;
+    border-radius: 10px; }
 
 .popup-payment__title {
   -ms-flex-item-align: center;
@@ -2832,9 +2874,9 @@ img {
   width: 100%;
   padding-top: 17px;
   padding-bottom: 19px;
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
   text-transform: uppercase; }
   @media (max-width: 768px) {
     .popup-work__button-pay {
@@ -2943,7 +2985,7 @@ img {
   line-height: 30px;
   overflow-y: auto; }
   .popup-confidentiality__text::-webkit-scrollbar {
-    width: 11px;
+    width: 7px;
     background-color: transparent; }
   .popup-confidentiality__text::-webkit-scrollbar-track {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
@@ -3050,7 +3092,7 @@ img {
   line-height: 30px;
   overflow-y: auto; }
   .popup-conditions__text::-webkit-scrollbar {
-    width: 11px;
+    width: 7px;
     background-color: transparent; }
   .popup-conditions__text::-webkit-scrollbar-track {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
@@ -3315,7 +3357,7 @@ img {
   line-height: 30px;
   overflow-y: auto; }
   .popup-cookie-info__text::-webkit-scrollbar {
-    width: 11px;
+    width: 7px;
     background-color: transparent; }
   .popup-cookie-info__text::-webkit-scrollbar-track {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
@@ -3587,7 +3629,7 @@ img {
   list-style: none;
   overflow-y: auto; }
   .popup-category__list::-webkit-scrollbar {
-    width: 11px;
+    width: 7px;
     background-color: transparent; }
   .popup-category__list::-webkit-scrollbar-track {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
@@ -3715,7 +3757,7 @@ img {
   list-style: none;
   overflow-y: auto; }
   .popup-compare__list::-webkit-scrollbar {
-    width: 11px;
+    width: 7px;
     background-color: transparent; }
   .popup-compare__list::-webkit-scrollbar-track {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, transparent), color-stop(45%, #24272D), color-stop(55%, #24272D), color-stop(55%, transparent));
@@ -4081,7 +4123,7 @@ img {
 .input__label {
   display: block;
   margin-bottom: 6px;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 9px;
   font-weight: 400;
   color: #24272D; }
@@ -4095,6 +4137,16 @@ img {
   line-height: 16px;
   font-weight: 700;
   outline: none; }
+  .input__field:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .input__field:focus::-moz-placeholder {
+    color: transparent; }
+  .input__field:focus:-ms-input-placeholder {
+    color: transparent; }
+  .input__field:focus::-ms-input-placeholder {
+    color: transparent; }
+  .input__field:focus::placeholder {
+    color: transparent; }
 
 .practice {
   margin-top: 70px; }
@@ -4983,7 +5035,7 @@ img {
 .instructor__prompt {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 9px; }
 
 .instructor__prompt--active {

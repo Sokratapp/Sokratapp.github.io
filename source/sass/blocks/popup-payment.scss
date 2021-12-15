@@ -36,6 +36,21 @@
   background-color: $white;
 
   box-shadow: 0 0 29px 0 rgba($black, 0.1);
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient(to right, transparent 45%, $black 45%, $black 55%, transparent 55%);
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    border-radius: 10px;
+  }
 }
 
 .popup-payment__title {
