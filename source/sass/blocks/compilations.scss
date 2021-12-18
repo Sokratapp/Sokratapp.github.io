@@ -1,0 +1,19 @@
+.compilations {
+  margin-top: 40px;
+}
+
+.compilations__item {
+  margin-bottom: 34px;
+
+  &:last-child {
+    margin-bottom: 45px;
+  }
+
+  &--partners {
+    margin-bottom: 40px;
+  }
+
+  &--soft-skills {
+    margin-bottom: 68px;
+  }
+}

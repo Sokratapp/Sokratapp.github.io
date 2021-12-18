@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Ищите знания в приложении Sokrat.">
   <title>Sokrat — Тысячи знаний внутри</title>
-  <link rel="stylesheet" href="css/style.min.css">
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Swiper bundle styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <!-- Project styles -->
+  <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
@@ -31,11 +32,6 @@
 </head>
 
 <body class="body">
-
-  <!-- <div style="display:none">
-    <include src="source/img/sprite_auto.svg"></include>
-  </div> -->
-
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-instagram" viewBox="0 0 31 31">
@@ -137,59 +133,87 @@
       <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
 
-
   </header>
 
   <main class="main">
 
-    <section class="main-slider">
-      <div class="main-slider__wrapper">
-        <h1 class="visually-hidden">Sokrat — Тысячи знаний внутри</h1>
-
-        <d class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <a class="swiper-slide modals__link" id="promotion" href="#modals">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
-                <img src="img/main-slider-placeholder.jpg" alt="">
-              </picture>
-            </a>
-            <a class="swiper-slide modals__link" id="promotion" href="#modals">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
-                <img src="img/main-slider-placeholder-2.jpg" alt="">
-              </picture>
-            </a>
-            <a class="swiper-slide modals__link" id="promotion" href="#modals">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
-                <img src="img/main-slider-placeholder.jpg" alt="">
-              </picture>
-            </a>
-            <a class="swiper-slide modals__link" id="promotion" href="#modals">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/main-slider-placeholder-mobile.jpg">
-                <img src="img/main-slider-placeholder-2.jpg" alt="">
-              </picture>
-            </a>
+    <section class="main-page-swiper">
+      <div class="main-page-swiper__wrapper">
+        <!-- <h1 class="visually-hidden">Sokrat — Тысячи знаний внутри</h1> -->
+        <div class="main-page-swiper__swiper">
+          <div class="main-page-swiper__swiper-wrapper swiper-wrapper">
+            <a class="main-page-swiper__swiper-slide swiper-slide" id="promotion" href="#modals"></a>
+            <a class="main-page-swiper__swiper-slide swiper-slide" id="promotion" href="#modals"></a>
+            <a class="main-page-swiper__swiper-slide swiper-slide" id="promotion" href="#modals"></a>
+            <a class="main-page-swiper__swiper-slide swiper-slide" id="promotion" href="#modals"></a>
+            <a class="main-page-swiper__swiper-slide swiper-slide" id="promotion" href="#modals"></a>
           </div>
-          <div class="swiper-pagination"></div>
-
+          <div class="main-page-swiper__pagination swiper-pagination"></div>
+        </div>
       </div>
-      </div>
-
     </section>
 
-    <div class="container">
-      <div class="container__wrapper">
+    <div class="block-popular container">
+      <div class="block-popular__wrapper">
 
-        <div class="container__content">
+        <div class="block-popular__content">
 
-          <section class="carousel carousel--popular">
+          <section class="block-popular__carousel carousel carousel--popular">
 
             <div class="carousel__wrapper">
               <h2 class="carousel__title">Популярное</h2>
 
+<<<<<<< HEAD
+              <div class="block-popular__swiper carousel__list">
+                <div class="swiper-wrapper">
+
+                  <div class="carousel__item carousel__item--main-page swiper-slide">
+                    <a href="#" class="carousel__img-link">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                        <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                      </picture>
+                      <div class="carousel__item-info carousel__item-info--main-page">
+                        <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                        <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                      </div>
+                      <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                    </a>
+                    <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+                  </div>
+
+                  <div class="carousel__item carousel__item--main-page swiper-slide">
+                    <a href="#" class="carousel__img-link">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                        <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                      </picture>
+                      <div class="carousel__item-info carousel__item-info--main-page">
+                        <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                        <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                      </div>
+                      <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                    </a>
+                    <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+                  </div>
+
+                  <div class="carousel__item carousel__item--main-page swiper-slide">
+                    <a href="#" class="carousel__img-link">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                        <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                      </picture>
+                      <div class="carousel__item-info carousel__item-info--main-page">
+                        <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                        <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                      </div>
+                      <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                    </a>
+                    <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+                  </div>
+
+                </div>
+=======
               <div class="carousel__list">
 
                 <div class="carousel__item">
@@ -239,54 +263,57 @@
 
                 <div class="carousel__btn-next"></div>
                 <div class="carousel__btn-prev"></div>
+>>>>>>> 1df86c95a8521a6e7e85c8aa6fb9469a50a01a69
               </div>
             </div>
           </section>
 
-          <section class="category">
-            <div class="category__wrapper">
-              <div class="category__heading-wrapper">
-                <h2 class="category__title">Мои категории</h2>
-                <a class="category__all-link" id="category" href="#">Посмотреть все</a>
+          <section class="block-popular__filter block-filter block-filter--user-categories">
+            <div class="block-filter__wrapper">
+              <div class="block-filter__header">
+                <h2 class="block-filter__title block-filter__title--user-categories">Мои категории</h2>
+                <a class="block-filter__all-link" id="category" href="#">Посмотреть все</a>
               </div>
-              <ul class="category__list">
-                <li class="category__item">
-                  <input class="category__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                  <label class="category__label" for="blockchain">
-                    <picture>
-                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                      <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-                    </picture>
-                    <span class="category__name">Блокчейн</span>
-                  </label>
-                </li>
-                <li class="category__item">
-                  <input class="category__input visually-hidden" id="blockchain1" type="checkbox" name="category" value="blockchain">
-                  <label class="category__label" for="blockchain1">
-                    <picture>
-                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                      <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-                    </picture>
-                    <span class="category__name">Блокчейн</span>
-                  </label>
-                </li>
-                <li class="category__item">
-                  <input class="category__input visually-hidden" id="blockchain3" type="checkbox" name="category" value="blockchain">
-                  <label class="category__label" for="blockchain3">
-                    <picture>
-                      <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                      <img class="category__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-                    </picture>
-                    <span class="category__name">Блокчейн</span>
-                  </label>
-                </li>
+              <ul class="block-popular__filter-swiper block-filter__list block-filter__list--user-categories">
+                <div class="swiper-wrapper">
+                  <li class="block-filter__item swiper-slide">
+                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                        <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
+                      </picture>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                    </label>
+                  </li>
+                  <li class="block-filter__item swiper-slide">
+                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                        <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
+                      </picture>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                    </label>
+                  </li>
+                  <li class="block-filter__item swiper-slide">
+                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                        <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
+                      </picture>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                    </label>
+                  </li>
+                </div>
               </ul>
             </div>
           </section>
         </div>
 
 
-        <div class="container__sidebar">
+        <div class="block-popular__sidebar">
           <div class="banner">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nisi id totam ex aliquid incidunt deleniti
             quasi, tempora porro tempore et quaerat minima recusandae deserunt, rem labore maiores culpa libero?
@@ -298,20 +325,20 @@
 
     <section class="cta">
       <h2 class="visually-hidden">Скачайте приложение Sokrat в Google play или App Store</h2>
-      <div class="cta__wrapper">
+      <div class="cta__wrapper container">
         <div class="cta__content-wrapper">
-          <p class="cta__title">Удобнее искать знания в приложении</p>
+          <p class="cta__title">Удобнее искать<br>знания в приложении</p>
           <p class="cta__text">Скачайте мобильное приложение Sokrat., чтобы иметь самый быстрый доступ к новым курсам.
           </p>
 
           <div class="cta__download-btn">
-            <a href="#" class="cta__download-btn-link cta__download-btn-link--appstore">
-              <img src="img/app-store-btn.svg" alt="Скачать с App Store" class="cta__btn-appstore-img" width="135"
+            <a class="cta__download-btn-link cta__download-btn-link--appstore" href="#">
+              <img class="cta__btn-img--appstore" src="img/app-store-btn.svg" alt="Скачать с App Store" width="135"
                 height="45">
             </a>
 
-            <a href="#" class="cta__download-btn-link cta__download-btn-link--gplay">
-              <img src="img/google-play-btn.svg" alt="Скачать Google Play" class="cta__btn-gplay-img" width="152"
+            <a class="cta__download-btn-link cta__download-btn-link--gplay" href="#">
+              <img class="cta__btn-img--gplay" src="img/google-play-btn.svg" alt="Скачать Google Play" width="152"
                 height="45">
             </a>
           </div>
@@ -321,598 +348,642 @@
       </div>
     </section>
 
-    <!-- New  -->
-    <section class="carousel carousel--full">
+    <section class="compilations container">
 
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Новинки</h2>
+      <section class="compilations__item carousel" aria-label="Популярное">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Популярное</h2>
 
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-        </div>
-
-        <div class="carousel__btn-next"></div>
-        <div class="carousel__btn-prev"></div>
-      </div>
-      </div>
-    </section>
-    <!-- New END-->
-
-    <!-- New 2 -->
-    <section class="carousel carousel--full">
-
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Новинки</h2>
-
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
+            </div>
 
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
           <div class="carousel__btn-next"></div>
           <div class="carousel__btn-prev"></div>
         </div>
-      </div>
-    </section>
-    <!-- New 2 END-->
-
-    <!-- Partners -->
-    <section class="partners">
-
-      <div class="partners__wrapper">
-
-        <h2 class="partners__title">Партнеры</h2>
-
-        <div class="partners__list">
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-
-
-          <div class="partners__btn-next"></div>
         </div>
-      </div>
-    </section>
-    <!-- Partners END -->
+      </section>
 
-    <!-- SOFT Skills  -->
-    <section class="carousel carousel--full">
+      <section class="compilations__item carousel" aria-label="Популярное">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Популярное</h2>
 
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Лучшее по SOFT Skills</h2>
-
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта Философия искусственного</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+            </div>
+
           </div>
 
           <div class="carousel__btn-next"></div>
           <div class="carousel__btn-prev"></div>
         </div>
-      </div>
-    </section>
-    <!-- SOFT Skills END-->
+        </div>
+      </section>
 
-    <!-- Improve qualifications -->
-    <section class="carousel carousel--full">
-
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Повысить квалификацию</h2>
-
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+      <section class="compilations__item compilations__item--partners carousel carousel--partners" aria-label="Партнеры">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Партнеры</h2>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта Философия искусственного</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="carousel__btn-next"></div>
+            <div class="carousel__btn-prev"></div>
           </div>
+        </div>
+      </section>
 
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
+      <section class="compilations__item compilations__item--soft-skills carousel" aria-label="Лучшее по SOFT Skills">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Лучшее по SOFT Skills</h2>
 
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+            </div>
 
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
           <div class="carousel__btn-next"></div>
           <div class="carousel__btn-prev"></div>
         </div>
-      </div>
-    </section>
-    <!-- Improve qualifications END-->
-
-
-    <!-- Practice with them -->
-    <section class="partners">
-
-      <div class="partners__wrapper">
-
-        <h2 class="partners__title">Пройди у них практику</h2>
-
-        <div class="partners__list">
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-          <div class="partners__item">
-            <a href="#" class="partners__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                <img src="img/skillbox-logo.png" alt="Партнер SkillBox" class="partners__img">
-              </picture>
-            </a>
-          </div>
-
-
-
-          <div class="partners__btn-next"></div>
         </div>
-      </div>
-    </section>
-    <!-- Practice with them END -->
+      </section>
 
-    <!-- SOFT Skills 2  -->
-    <section class="carousel carousel--full">
+      <section class="compilations__item carousel" aria-label="Популярное">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Популярное</h2>
 
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Лучшее по SOFT Skills</h2>
-
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта Философия искусственного</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
-
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+            </div>
+
           </div>
 
           <div class="carousel__btn-next"></div>
           <div class="carousel__btn-prev"></div>
         </div>
-      </div>
-    </section>
-    <!-- SOFT Skills 2 END-->
+        </div>
+      </section>
 
-    <!-- Improve qualifications 2 -->
-    <section class="carousel carousel--full">
-
-      <div class="carousel__wrapper">
-        <h2 class="carousel__title">Повысить квалификацию</h2>
-
-        <div class="carousel__list">
-
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+      <section class="compilations__item compilations__item--partners carousel carousel--partners" aria-label="Партнеры">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Партнеры</h2>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта Философия искусственного</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+              <div class="carousel__item carousel__item--partners swiper-slide">
+                <a class="carousel__img-link carousel__img-link--partners" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
+                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126" height="29" alt="Партнер SkillBox">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="carousel__btn-next"></div>
+            <div class="carousel__btn-prev"></div>
           </div>
+        </div>
+      </section>
 
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
+      <section class="compilations__item carousel" aria-label="Лучшее по SOFT Skills">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Лучшее по SOFT Skills</h2>
 
-          <div class="carousel__item">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
-          </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+            </div>
 
-          <div class="carousel__item carousel__item--last">
-            <a href="#" class="carousel__img-link">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                <img src="img/girls.svg" alt="" class="carousel__img">
-              </picture>
-              <div class="carousel__item-info">
-                <p class="carousel__item-price">700 000 ₽</p>
-                <p class="carousel__item-duration">23 месяца</p>
-              </div>
-              <p class="carousel__item-title">Философия искусственного интеллекта</p>
-            </a>
-            <a href="#" class="carousel__item-btn">Подробнее</a>
           </div>
 
           <div class="carousel__btn-next"></div>
           <div class="carousel__btn-prev"></div>
         </div>
-      </div>
+        </div>
+      </section>
+
+      <section class="compilations__item carousel" aria-label="Популярное">
+        <div class="carousel__wrapper">
+          <h2 class="carousel__title">Популярное</h2>
+
+          <div class="compilations__swiper carousel__list">
+            <div class="swiper-wrapper">
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта</p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel__btn-next"></div>
+          <div class="carousel__btn-prev"></div>
+        </div>
+        </div>
+      </section>
+
     </section>
+
     <section class="popup-cookie popup-cookie--hidden">
       <div class="popup-cookie__block">
         <p class="popup-cookie__text">
@@ -1084,6 +1155,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__left-col">
