@@ -1,4 +1,4 @@
-import './vendor.js';
+// import './vendor.js';
 import './popup-payment.js';
 import './popup-work.js';
 import './popup-confidentiality.js';
@@ -11,9 +11,4 @@ import './popup-category.js';
 import './popup-compare.js';
 import './popup-promotion.js';
 import './search.js';
-
-let swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+import './swipers.js';

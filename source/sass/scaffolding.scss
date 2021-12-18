@@ -24,3 +24,16 @@ img {
   background-color: $accent-color;
   border-radius: 50%;
 }
+
+.container {
+  max-width: 1472px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: $desktop) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

@@ -9,6 +9,18 @@ $block-filter-list-item-size-desktop: 99px;
   border-radius: 10px;
   background-color: $white;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
+
+  &--user-categories {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.block-filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
 }
 
 .block-filter__title {
@@ -21,6 +33,10 @@ $block-filter-list-item-size-desktop: 99px;
   @media (min-width: $desktop) {
     font: 700 20px/24px $body-font-family;
   }
+
+  &--user-categories {
+    margin-bottom: 0;
+  }
 }
 
 .block-filter__list {
@@ -29,7 +45,6 @@ $block-filter-list-item-size-desktop: 99px;
   row-gap: 15px;
   column-gap: 11px;
   justify-content: start;
-
 
   margin-bottom: 0;
   margin-top: 0;
@@ -43,6 +58,12 @@ $block-filter-list-item-size-desktop: 99px;
     grid-template-columns: repeat(auto-fill, $block-filter-list-item-size-desktop);
     column-gap: 12px;
     row-gap: 19px;
+  }
+
+  &--user-categories {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 193px;
   }
 }
 
@@ -93,6 +114,11 @@ $block-filter-list-item-size-desktop: 99px;
       top: 82px;
     }
   }
+
+  &--user-categories::after {
+    width: 193px;
+    height: 193px;
+  }
 }
 
 .block-filter__img {
@@ -108,10 +134,12 @@ $block-filter-list-item-size-desktop: 99px;
   display: block;
   width: 100%;
 
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 700;
+  font: 700 12px/14px $body-font-family;
   text-align: center;
+
+  &--user-categories {
+    font: 700 16px/19px $body-font-family;
+  }
 }
 
 .block-filter__all {
@@ -127,5 +155,15 @@ $block-filter-list-item-size-desktop: 99px;
 
     font-size: 15px;
     line-height: 18px;
+  }
+}
+
+.block-filter__all-link {
+  font: 500 15px/18px $body-font-family;
+  color: $main-color;
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
   }
 }
