@@ -1,5 +1,9 @@
 .main-page-swiper {
   margin-top: 15px;
+
+  @media (min-width: $mobile) {
+    margin-top: 30px;
+  }
 }
 
 .main-page-swiper__wrapper {
@@ -31,7 +35,9 @@
     margin-right: 0;
   }
   @media (min-width: $mobile) {
-    background-image: url("../img/main-slider-placeholder.jpg");
+    width: 546px;
+    min-height: 382px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/12/11/19/21/breakfast-6863479_960_720.jpg");
   }
 
   // @media (max-width: $mobile) {

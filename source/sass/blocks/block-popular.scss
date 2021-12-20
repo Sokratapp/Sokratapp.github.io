@@ -9,22 +9,24 @@
   margin: 0 auto;
 }
 .block-popular__content {
-  flex-basis: 75%;
+  width: 100%;
 
-  @media (max-width: $mobile) {
-    width: 100%;
+  @media (min-width: $desktop) {
+    flex-basis: 75%;
   }
 }
 .block-popular__sidebar {
-  margin-top: 63px;
-  padding: 25px;
-  flex-basis: 25%;
-  padding-left: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(#000000, 0.1);
 
-  @media (max-width: $mobile) {
-    display: none;
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin-top: 63px;
+    padding: 25px;
+    flex-basis: 25%;
+    padding-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(#000000, 0.1);
   }
 }
 

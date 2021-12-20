@@ -16,6 +16,8 @@ $block-filter-list-item-size-desktop: 99px;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
 
   &--user-categories {
+    padding: 0;
+    margin-bottom: 0;
     border-radius: 0;
     box-shadow: none;
   }
@@ -26,6 +28,10 @@ $block-filter-list-item-size-desktop: 99px;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 30px;
+
+  @media (min-width: $mobile) {
+    align-items: center;
+  }
 }
 
 .block-filter__title {
@@ -42,6 +48,10 @@ $block-filter-list-item-size-desktop: 99px;
 
   &--user-categories {
     margin-bottom: 0;
+
+    @media (min-width: $mobile) {
+      font: 700 32px/38px $body-font-family;
+    }
   }
 }
 
@@ -171,5 +181,9 @@ $block-filter-list-item-size-desktop: 99px;
 
   &:visited {
     text-decoration: none;
+  }
+
+  @media (min-width: $mobile) {
+    font: 500 20px/24px $body-font-family;
   }
 }
