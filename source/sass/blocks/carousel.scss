@@ -10,20 +10,22 @@
 
 .carousel__title {
   margin-top: 0;
-  margin-bottom: 28px;
-  padding-right: 38px;
-  padding-left: 38px;
+  padding-right: 0;
+  padding-left: 0;
 
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 24px;
 
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    padding-right: 0;
-    padding-left: 0;
+  @media (min-width: $mobile) {
+    margin-bottom: 28px;
 
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 36px;
+    padding-left: 36px;
   }
 }
 
@@ -31,7 +33,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 38px;
+  padding: 0 14px;
 
   @media (max-width: $mobile) {
     padding: 0;
@@ -116,6 +118,10 @@
 
   &--main-page {
     margin-bottom: 16px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: -2px;
+    }
   }
 }
 

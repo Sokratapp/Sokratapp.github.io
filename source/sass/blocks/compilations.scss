@@ -1,19 +1,23 @@
 .compilations {
   margin-top: 40px;
+
+  @media (min-width: $mobile) {
+    margin-top: 50px;
+  }
 }
 
 .compilations__item {
   margin-bottom: 34px;
 
+  @media (min-width: $mobile) {
+    margin-bottom: 44px;
+  }
+
   &:last-child {
     margin-bottom: 45px;
-  }
 
-  &--partners {
-    margin-bottom: 40px;
-  }
-
-  &--soft-skills {
-    margin-bottom: 68px;
+    @media (min-width: $mobile) {
+      margin-bottom: 90px;
+    }
   }
 }

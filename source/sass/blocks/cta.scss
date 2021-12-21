@@ -1,63 +1,75 @@
 .cta {
-  margin-top: 70px;
-  background-color: $bg-light;
-  background-image: url('../../img/cta-bg.png');
-  background-repeat: no-repeat;
-  background-position: 90% bottom;
+  margin-top: 39px;
+  // padding-left: 16px;
+  background-image: none;
+  min-height: 341px;
 
-  @media (max-width: $mobile) {
-    margin-top: 39px;
-    // padding-left: 16px;
-    background-image: none;
-    min-height: 341px;
+  @media (min-width: $mobile) {
+    margin-top: 75px;
+    min-height: 622px;
+    background-color: $bg-light;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url('../../img/cta-bg.png');
+    background-repeat: no-repeat;
+    background-position: 88.5% 105%;
   }
 }
 
 .cta__wrapper {
-  // padding-top: 150px;
-  // padding-bottom: 100px;
+  padding-top: 44px;
+  padding-bottom: 70px;
 
-  @media (max-width: $mobile) {
-    padding-top: 44px;
-    // padding-bottom: 35px;
+  @media (min-width: $mobile) {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 158px;
   }
 }
 
 .cta__content-wrapper {
-  max-width: 550px;
+  max-width: 307px;
+
+  @media (min-width: $mobile) {
+    max-width: 540px;
+  }
 }
 
 .cta__title {
-  margin-top: 0;
   margin-bottom: 8px;
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 1.2;
+  font: 700 28px/34px $body-font-family;
 
-  @media (max-width: $mobile) {
-    font-size: 28px;
-    line-height: 34px;
+  @media (min-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font: 700 46px/55px $body-font-family;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 9px;
   }
 }
 
 .cta__text {
-  margin-top: 0;
   margin-bottom: 37px;
-  font-size: 29px;
-  line-height: 1.4;
 
-  @media (max-width: $mobile) {
-    font-size: 17px;
-    line-height: 24px;
+  font: 400 17px/24px $body-font-family;
+
+  @media (min-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 49px;
+
+    font: 400 29px/41px $body-font-family;
   }
 }
 
 .cta__download-btn {
-
-  @media (max-width: $mobile) {
   display: flex;
   flex-wrap: nowrap;
-  }
 }
 
 .cta__download-btn-link {
@@ -68,11 +80,26 @@
     width: 127px;
     height: 42px;
     margin-right: 36px;
+
+    @media (min-width: $mobile) {
+      width: 201px;
+      height: 67px;
+      margin-right: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 56px;
+    }
   }
 
   &--gplay {
     width: 142px;
     height: 42px;
+
+    @media (min-width: $mobile) {
+      width: 224px;
+      height: 67px;
+    }
   }
 }
 
@@ -81,22 +108,22 @@
   vertical-align: middle;
 
   &--appstore {
-    width: 201px;
-    height: 67px;
+    width: 127px;
+    height: 42px;
 
-    @media (max-width: $mobile) {
-      width: 127px;
-      height: 42px;
+    @media (min-width: $mobile) {
+      width: 201px;
+      height: 67px;
     }
   }
 
   &--gplay {
-    width: 224px;
-    height: 67px;
+    width: 142px;
+    height: 42px;
 
-    @media (max-width: $mobile) {
-      width: 142px;
-      height: 42px;
+    @media (min-width: $mobile) {
+      width: 224px;
+      height: 67px;
     }
   }
 }
