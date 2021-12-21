@@ -24,8 +24,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-right: 38px;
-    padding-left: 38px;
+    padding-right: 36px;
+    padding-left: 36px;
   }
 }
 
@@ -33,7 +33,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 38px;
+  padding: 0 14px;
 
   @media (max-width: $mobile) {
     padding: 0;
@@ -118,6 +118,10 @@
 
   &--main-page {
     margin-bottom: 16px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: -2px;
+    }
   }
 }
 

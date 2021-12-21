@@ -32,6 +32,12 @@ $block-filter-list-item-size-desktop: 99px;
   @media (min-width: $mobile) {
     align-items: center;
   }
+  @media (min-width: $desktop) {
+    margin-left: -12px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+  }
 }
 
 .block-filter__title {
@@ -80,6 +86,10 @@ $block-filter-list-item-size-desktop: 99px;
     display: flex;
     flex-wrap: nowrap;
     width: 193px;
+
+    @media (min-width: $desktop) {
+      width: 160px;
+    }
   }
 }
 
@@ -134,6 +144,11 @@ $block-filter-list-item-size-desktop: 99px;
   &--user-categories::after {
     width: 193px;
     height: 193px;
+
+    @media (min-width: $desktop) {
+      width: 160px;
+      height: 160px;
+      }
   }
 }
 

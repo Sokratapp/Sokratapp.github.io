@@ -2,7 +2,7 @@
   margin-top: 40px;
 
   @media (min-width: $mobile) {
-    margin-top: 54px;
+    margin-top: 50px;
   }
 }
 
@@ -19,13 +19,5 @@
     @media (min-width: $mobile) {
       margin-bottom: 90px;
     }
-  }
-
-  &--partners {
-    margin-bottom: 40px;
-  }
-
-  &--soft-skills {
-    margin-bottom: 68px;
   }
 }

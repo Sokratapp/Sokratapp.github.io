@@ -13,7 +13,7 @@
   @media (min-width: $desktop) {
     background-image: url('../../img/cta-bg.png');
     background-repeat: no-repeat;
-    background-position: 90% bottom;
+    background-position: 88.5% 105%;
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 150px;
+    padding-top: 158px;
   }
 }
 
@@ -48,6 +48,10 @@
     margin-bottom: 16px;
     font: 700 46px/55px $body-font-family;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .cta__text {
@@ -57,7 +61,7 @@
 
   @media (min-width: $mobile) {
     margin-top: 0;
-    margin-bottom: 53px;
+    margin-bottom: 49px;
 
     font: 400 29px/41px $body-font-family;
   }
@@ -81,6 +85,10 @@
       width: 201px;
       height: 67px;
       margin-right: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 56px;
     }
   }
 
