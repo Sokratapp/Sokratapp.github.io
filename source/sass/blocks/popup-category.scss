@@ -1,14 +1,18 @@
 .popup-category {
   position: fixed;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  margin: auto;
-
-  z-index: 11;
   background-color: rgba($bg-light, 0.6);
+  
+  z-index: 11;
+
+ 
 }
 
 .popup-category--hidden {
@@ -109,14 +113,15 @@
 .popup-category__list {
   position: relative;
 
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, 93px);
-  column-gap: 20px;
+  column-gap: 31px;
   row-gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 217px;
+  padding-right: 62px;
   padding-left: 0;
+  flex-wrap: wrap;
 
   font-size: 20px;
   line-height: 30px;
