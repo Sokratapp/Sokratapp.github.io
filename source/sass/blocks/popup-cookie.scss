@@ -99,4 +99,13 @@
     font-size: 14px;
     line-height: 18px;
   }
+  @media (max-width: 475px) {
+  
+
+    white-space: nowrap;
+    padding: 7px 20px 10px;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
 }

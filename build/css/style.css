@@ -3342,6 +3342,12 @@ img {
       padding-bottom: 11px;
       font-size: 14px;
       line-height: 18px; } }
+  @media (max-width: 475px) {
+    .popup-cookie__button {
+      white-space: nowrap;
+      padding: 7px 20px 10px;
+      font-size: 12px;
+      line-height: 18px; } }
 
 .popup-cookie-info {
   position: fixed;
