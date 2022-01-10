@@ -143,6 +143,7 @@
   margin-left: 17px;
   padding: 0;
   border: none;
+  cursor: pointer;
 
   font-size: 20px;
   line-height: 27px;
@@ -150,6 +151,9 @@
   color: $main-color;
 
   background-color: transparent;
+
+  display: block;
+  margin:auto;
 
   @media (max-width: $mobile) {
     grid-area: more;
@@ -162,11 +166,13 @@
 
 .course__sidebar {
   grid-area: sidebar;
+  
 }
 
 .course__teacher {
   grid-area: teacher;
   margin-bottom: 54px;
+  width: 100%;
 
   @media (max-width: $mobile) {
     margin-bottom: 9px;
@@ -175,6 +181,8 @@
 
 .course__programm {
   grid-area: programm;
+  width: 100%;
+  height: auto;
 
   @media (max-width: $mobile) {
     margin-bottom: 9px;
@@ -235,7 +243,7 @@
 .course__lesson-title {
   width: 200px;
 
-  font-size: 13px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1.2;
 
@@ -253,7 +261,7 @@
   margin-bottom: 0;
   margin-right: 4px;
 
-  font-size: 15px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.2;
   color: $main-color;
