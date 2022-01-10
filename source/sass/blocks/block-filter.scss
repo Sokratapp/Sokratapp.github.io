@@ -10,7 +10,7 @@ $block-filter-list-item-size-desktop: 99px;
   padding-top: 17px;
   padding-bottom: 22px;
   margin-bottom: 20px;
-
+  width: 100%;
   border-radius: 10px;
   background-color: $white;
   box-shadow: 0 0 16px rgba(#000000, 0.1);
@@ -121,7 +121,7 @@ $block-filter-list-item-size-desktop: 99px;
     position: absolute;
     content: "";
     right: 5.5px;
-    top: 76px;
+    bottom: 33px;
 
     display: none;
     width: 12px;
@@ -137,7 +137,7 @@ $block-filter-list-item-size-desktop: 99px;
     @media (min-width: $desktop) {
       width: 13px;
       height: 13px;
-      top: 82px;
+      
     }
   }
 

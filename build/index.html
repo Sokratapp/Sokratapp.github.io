@@ -129,7 +129,7 @@
   <main class="main">
 
     <section class="main-page-swiper">
-      <div class="main-page-swiper__wrapper">
+      <div class="main-page-swiper__wrapper swiper">
         <!-- <h1 class="visually-hidden">Sokrat — Тысячи знаний внутри</h1> -->
         <div class="main-page-swiper__swiper">
           <div class="main-page-swiper__swiper-wrapper swiper-wrapper">
@@ -147,9 +147,9 @@
     <div class="block-popular container">
       <div class="block-popular__wrapper">
 
-        <div class="block-popular__content">
+        <div class="block-popular__content ">
 
-          <section class="block-popular__carousel carousel carousel--popular">
+          <section class="block-popular__carousel carousel carousel--popular swiper">
 
             <div class="carousel__wrapper">
               <h2 class="carousel__title">Популярное</h2>
@@ -205,6 +205,8 @@
                     <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
                   </div>
 
+                  
+
                 </div>
               </div>
             </div>
@@ -212,14 +214,16 @@
 
           <section class="block-popular__filter block-filter block-filter--user-categories swiper">
             <div class="block-filter__wrapper">
+
               <div class="block-filter__header">
                 <h2 class="block-filter__title block-filter__title--user-categories">Мои категории</h2>
                 <a class="block-filter__all-link" id="category" href="#">Посмотреть все</a>
               </div>
+              
               <ul class="block-popular__filter-swiper block-filter__list block-filter__list--user-categories">
                 <div class="swiper-wrapper">
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain" type="radio" name="category" value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
@@ -229,8 +233,8 @@
                     </label>
                   </li>
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain1" type="radio" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain1">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
@@ -239,8 +243,8 @@
                     </label>
                   </li>
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain2" type="radio" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain2">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
@@ -249,8 +253,8 @@
                     </label>
                   </li>
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain3" type="radio" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain3">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
@@ -259,8 +263,8 @@
                     </label>
                   </li>
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain4" type="radio" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain4">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
@@ -269,8 +273,8 @@
                     </label>
                   </li>
                   <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
+                    <input class="block-filter__input visually-hidden" id="blockchain5" type="radio" name="category" value="blockchain">
+                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain5">
                       <picture>
                         <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
@@ -278,26 +282,7 @@
                       <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
                     </label>
                   </li>
-                  <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
-                      <picture>
-                        <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                        <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
-                      </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
-                    </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
-                    <input class="block-filter__input visually-hidden" id="blockchain" type="checkbox" name="category" value="blockchain">
-                    <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
-                      <picture>
-                        <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                        <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px" alt="">
-                      </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
-                    </label>
-                  </li>
+                  
                   
 
                   
@@ -1046,6 +1031,8 @@
       </section>
 
     </section>
+
+    
 
     <section class="popup-cookie popup-cookie--hidden">
       <div class="popup-cookie__block">
