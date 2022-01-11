@@ -105,7 +105,7 @@
     height: 64px;
     border-radius: 10px;
     background-color: $bg-light;
-    background-image: url("../../img/clock-icon.svg");
+    background-image: url("../img/clock-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -123,11 +123,11 @@
 }
 
 .sidebar__details-item--format::before {
-  background-image: url("../../img/play-icon.svg");
+  background-image: url("../img/play-icon.svg");
 }
 
 .sidebar__details-item--invoice::before {
-  background-image: url("../../img/invoice.svg");
+  background-image: url("../img/invoice.svg");
 }
 
 .sidebar__details-title {

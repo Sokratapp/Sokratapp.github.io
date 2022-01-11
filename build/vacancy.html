@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="page">
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-instagram" viewBox="0 0 31 31">
@@ -56,7 +56,7 @@
   </div>
 
   <header class="header">
-    <div class="top-bar" aria-label="Приложение Sokrat">
+    <div class="top-bar">
       <div class="top-bar__container container">
         <p class="top-bar__content">
           Ищите знания<br>
@@ -68,7 +68,7 @@
     <div class="header__wrapper">
       <div class="header__inner-wrapper">
         <a class="logo" href="index.html">
-          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="Логотип Sokrat">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
         </a>
         <div class="search search--hidden">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
@@ -95,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div class="main-nav main-nav--closed" aria-label="Навигация по сайту">
+    <div class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
       </button>
@@ -105,7 +105,7 @@
             <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Каталог курсов</a>
+            <a href="#" class="main-nav__link">Все курсы</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Вакансии</a>
@@ -118,128 +118,132 @@
       <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
     </div>
   </header>
-  <main class="main">
-    <header class="page-header page-header--practices" aria-label="Все вакансии">
-      <div class="page-header__plug-img"></div>
-    </header>
+  <main class="page__main main">
+    <h1 class="visually-hidden">Партнер по курсам</h1>
 
-    <div class="list-layout container">
-      <div class="list-layout__block-filter block-filter" aria-label="Выбор категорий вакансий">
-        <h2 class="block-filter__title block-filter__title--practices">Выберите категорию</h2>
-        <ul class="block-filter__list block-filter__list--practices">
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain1" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain1">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain2" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain2">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain3" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain3">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain4" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain4">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain5" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain5">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-          <li class="block-filter__item">
-            <input class="block-filter__input visually-hidden" id="blockchain6" type="radio" name="category" value="blockchain">
-            <label class="block-filter__label" for="blockchain6">
-              <picture>
-                <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
-                <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
-              </picture>
-              <span class="block-filter__name">Блокчейн</span>
-            </label>
-          </li>
-        </ul>
+    <section class="main__partner partner container">
+      <div class="partner__info">
+        <img class="partner__avatar" src="img/geekbrains.jpg" width="373px" height="373px" alt="">
+        <div class="partner__data">
+          <div class="partner__inner">
+            <h2 class="partner__title">Geekbrains</h2>
+            <p class="partner__text">
+              Курс General Management программы MBA предназначен для подготовки элитных
+              руководителей, которые владеют фундаментальными знаниями о современном
+              состоянии экономики, обладают глубоким пониманием логики стратегического.
+            </p>
+          </div>
+          <h3 class="partner__subtitle">Детали</h3>
+          <ul class="partner__list">
+            <li class="partner__item">
+              <a class="partner__link" href="#">
+                Год основания
+                <span class="partner__number">
+                  2012
+                </span>
+              </a>
+            </li>
+            <li class="partner__item">
+              <a class="partner__link" href="#">
+                Всего вакансий
+                <span class="partner__number">
+                  1500
+                </span>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+       
       </div>
-      <div class="list-layout__block-list block-list">
-        <form class="block-list__form" action="">
-          <input class="block-list__search" type="search" placeholder="Поиск по вакансиям">
-        </form>
-        <ul class="block-list__products products">
-          <li class="products__item">
-            <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
-            <p class="products__price">
-              700 000 ₽
-            </p>
-            <p class="products__title">
-              Frontend Developer
-            </p>
-            <p class="products__description">
-              Описание вакансии выдаем в две
-              строчки с многоточием...
-            </p>
-            <a class="products__link btn btn--practices" href="#">Подробнее</a>
-          </li>
-          <li class="products__item">
-            <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
-            <p class="products__price">
-              700 000 ₽
-            </p>
-            <p class="products__title">
-              Frontend Developer
-            </p>
-            <p class="products__description">
-              Описание вакансии выдаем в две
-              строчки с многоточием...
-            </p>
-            <a class="products__link btn btn--practices" href="#">Подробнее</a>
-          </li>
-          <li class="products__item">
-            <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
-            <p class="products__price">
-              700 000 ₽
-            </p>
-            <p class="products__title">
-              Frontend Developer
-            </p>
-            <p class="products__description">
-              Описание вакансии выдаем в две
-              строчки с многоточием...
-            </p>
-            <a class="products__link btn btn--practices" href="#">Подробнее</a>
-          </li>
-        </ul>
-        <a class="block-list__more btn btn--practices" href="#">Показать еще</a>
+      <div class="partner__courses">
+        <div class="partner__block-filter block-filter">
+          <h2 class="block-filter__title">Категории</h2>
+          <ul class="block-filter__list">
+            <li class="block-filter__item">
+              <input class="block-filter__input visually-hidden" id="blockchain" type="radio" name="category" value="blockchain">
+              <label class="block-filter__label" for="blockchain">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                  <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+                </picture>
+                <span class="block-filter__name">Блокчейн</span>
+              </label>
+            </li>
+            <li class="block-filter__item">
+              <input class="block-filter__input visually-hidden" id="blockchain1" type="radio" name="category" value="blockchain">
+              <label class="block-filter__label" for="blockchain1">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                  <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+                </picture>
+                <span class="block-filter__name">Блокчейн</span>
+              </label>
+            </li>
+            <li class="block-filter__item">
+              <input class="block-filter__input visually-hidden" id="blockchain3" type="radio" name="category" value="blockchain">
+              <label class="block-filter__label" for="blockchain3">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/category-placeholder-mobile.jpg">
+                  <img class="block-filter__img" src="img/category-placeholder.jpg" width="99px" height="99px" alt="">
+                </picture>
+                <span class="block-filter__name">Блокчейн</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="list-layout__block-list block-list">
+            <ul class="block-list__products products">
+              <li class="products__item">
+                <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
+                <p class="products__price">
+                  700 000 ₽
+                </p>
+                <p class="products__title">
+                  Frontend Developer
+                </p>
+                <p class="products__description">
+                  Описание вакансии выдаем в две
+                  строчки с многоточием...
+                </p>
+                <a class="products__link btn btn--practices" href="#">Подробнее</a>
+              </li>
+              <li class="products__item">
+                <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
+                <p class="products__price">
+                  700 000 ₽
+                </p>
+                <p class="products__title">
+                  Frontend Developer
+                </p>
+                <p class="products__description">
+                  Описание вакансии выдаем в две
+                  строчки с многоточием...
+                </p>
+                <a class="products__link btn btn--practices" href="#">Подробнее</a>
+              </li>
+              <li class="products__item">
+                <img class="products__img" src="img/girls.svg" width="282" height="151" alt="">
+                <p class="products__price">
+                  700 000 ₽
+                </p>
+                <p class="products__title">
+                  Frontend Developer
+                </p>
+                <p class="products__description">
+                  Описание вакансии выдаем в две
+                  строчки с многоточием...
+                </p>
+                <a class="products__link btn btn--practices" href="#">Подробнее</a>
+              </li>
+            </ul>
+            <button class="block-list__more btn btn--practices" href="#">Показать еще</button>
+          </div>
+
       </div>
-    </div>
+    </section>
     <section class="popup-cookie popup-cookie--hidden">
       <div class="popup-cookie__block">
         <p class="popup-cookie__text">
@@ -360,7 +364,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__col-wrapper">
@@ -444,7 +447,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__wrapper">
         <ul class="bottom-bar__nav-list">
-            <li class="bottom-bar__nav-item">
+          <li class="bottom-bar__nav-item">
             <a href="#" class="bottom-bar__nav-link" id="conditions">Условия использования</a>
           </li>
           <li class="bottom-bar__nav-item">

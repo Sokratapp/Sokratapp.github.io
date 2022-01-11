@@ -215,8 +215,11 @@
                   </div>
 
                   
+                  
 
                 </div>
+                <div class="carousel__btn-next"></div>
+                <div class="carousel__btn-prev"></div>
               </div>
             </div>
           </section>
@@ -229,9 +232,9 @@
                 <a class="block-filter__all-link" id="category" href="#">Посмотреть все</a>
               </div>
               
-              <ul class="block-popular__filter-swiper block-filter__list block-filter__list--user-categories">
+              <div class="block-popular__filter-swiper block-filter__list block-filter__list--user-categories">
                 <div class="swiper-wrapper">
-                  <li class="block-filter__item swiper-slide">
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain">
@@ -240,10 +243,10 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн1</span>
                     </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
+                  </div>
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain1" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain1">
@@ -252,10 +255,10 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн2</span>
                     </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
+                  </div>
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain2" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain2">
@@ -264,10 +267,10 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн3</span>
                     </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
+                  </div>
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain3" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain3">
@@ -276,10 +279,10 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн4</span>
                     </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
+                  </div>
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain4" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain4">
@@ -288,10 +291,10 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн5</span>
                     </label>
-                  </li>
-                  <li class="block-filter__item swiper-slide">
+                  </div>
+                  <div class="block-filter__item swiper-slide">
                     <input class="block-filter__input visually-hidden" id="blockchain5" type="radio" name="category"
                       value="blockchain">
                     <label class="block-filter__label block-filter__label--user-categories" for="blockchain5">
@@ -300,15 +303,12 @@
                         <img class="block-filter__img" src="img/category-placeholder.jpg" width="193px" height="193px"
                           alt="">
                       </picture>
-                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн</span>
+                      <span class="block-filter__name block-filter__name--user-categories">Блокчейн6</span>
                     </label>
-                  </li>
-                  
-                  
-
+                  <divi>
                   
                 </div>
-              </ul>
+              </div>
             </div>
           </section>
         </div>
@@ -316,8 +316,7 @@
 
         <div class="block-popular__sidebar">
           <div class="banner">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nisi id totam ex aliquid incidunt deleniti
-            quasi, tempora porro tempore et quaerat minima recusandae deserunt, rem labore maiores culpa libero?
+           
           </div>
         </div>
 
@@ -357,11 +356,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -372,11 +372,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -387,11 +388,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -402,11 +404,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -417,11 +420,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -432,11 +436,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -447,11 +452,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -478,11 +484,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -493,11 +500,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -508,11 +516,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -523,11 +532,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -538,11 +548,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -553,11 +564,28 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -588,7 +616,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -597,7 +625,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -606,7 +634,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -615,7 +643,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -624,7 +652,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -642,11 +670,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -657,11 +686,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -672,11 +702,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -687,11 +718,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -702,11 +734,44 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -733,11 +798,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -748,11 +814,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -763,11 +830,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -778,11 +846,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -793,11 +862,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -808,11 +878,28 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -843,7 +930,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -852,7 +939,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -861,7 +948,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -870,7 +957,7 @@
                 <a class="carousel__img-link carousel__img-link--partners" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/skillbox-logo-mobile.png">
-                    <img class="carousel__img carousel__img--partners" src="img/skillbox-logo.png" width="126"
+                    <img class="carousel__img carousel__img--partners" src="img/two-girl.png" width="126"
                       height="29" alt="Партнер SkillBox">
                   </picture>
                 </a>
@@ -888,11 +975,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -903,11 +991,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -918,11 +1007,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -933,11 +1023,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -948,11 +1039,44 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -979,11 +1103,12 @@
 
           <div class="compilations__swiper carousel__list">
             <div class="swiper-wrapper">
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-active" role="group"
+                aria-label="1 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -994,11 +1119,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide swiper-slide-next" role="group"
+                aria-label="2 / 7" style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -1009,11 +1135,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="3 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -1024,11 +1151,12 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="4 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
@@ -1039,11 +1167,44 @@
                 </a>
                 <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
               </div>
-              <div class="carousel__item carousel__item--main-page swiper-slide">
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="5 / 7"
+                style="width: 341.25px; margin-right: 21px;">
                 <a class="carousel__img-link" href="#">
                   <picture>
                     <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
-                    <img class="carousel__img carousel__img--main-page" src="img/slider-placeholder.jpg" alt="">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="6 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
+                  </picture>
+                  <div class="carousel__item-info carousel__item-info--main-page">
+                    <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>
+                    <p class="carousel__item-duration carousel__item-duration--main-page">23 месяца</p>
+                  </div>
+                  <p class="carousel__item-title carousel__item-title--main-page">Философия искусственного интеллекта
+                  </p>
+                </a>
+                <a href="#" class="carousel__item-btn carousel__item-btn--main-page">Подробнее</a>
+              </div>
+              <div class="carousel__item carousel__item--main-page swiper-slide" role="group" aria-label="7 / 7"
+                style="width: 341.25px; margin-right: 21px;">
+                <a class="carousel__img-link" href="#">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/slider-placeholder-mobile.jpg">
+                    <img class="carousel__img carousel__img--main-page" src="img/girls.svg" alt="">
                   </picture>
                   <div class="carousel__item-info carousel__item-info--main-page">
                     <p class="carousel__item-price carousel__item-price--main-page">700 000 ₽</p>

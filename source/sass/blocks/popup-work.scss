@@ -1,14 +1,16 @@
 .popup-work {
   position: fixed;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  margin: auto;
-
-  z-index: 10;
   background-color: rgba($bg-light, 0.6);
+  
+  z-index: 11;
 }
 
 .popup-work--hidden {
@@ -137,7 +139,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 1.3;
-  text-transform: uppercase;
+  
 
   @media (max-width: $mobile) {
     padding-top: 13px;

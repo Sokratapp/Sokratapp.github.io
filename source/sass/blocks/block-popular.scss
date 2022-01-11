@@ -9,10 +9,12 @@
 }
 
 .block-popular__wrapper {
+ 
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
+ 
 
   @media (min-width: $desktop) {
     // gap: 37px;
@@ -48,6 +50,3 @@
   }
 }
 
-.block-popular__filter {
-
-}
