@@ -64,20 +64,48 @@
     </svg>
   </div>
 
+  <header class="mobile-menu">
+    <div class="mobile-menu__header">
+      <div class="mobile-menu__header__logo">
+        <a href="index.html">
+          <img class="logo-mobile" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
+        </a>
+      </div>
+      <div class="mobile-menu__header__cancel">
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+          <g id="cancel" transform="translate(0 -0.001)">
+            <g id="Сгруппировать_8931" data-name="Сгруппировать 8931" transform="translate(0 0.001)">
+              <path id="Контур_21499" data-name="Контур 21499" d="M16.657,15l13-13A1.172,1.172,0,0,0,28,.344l-13,13L2,.344A1.172,1.172,0,0,0,.343,2l13,13-13,13A1.172,1.172,0,0,0,2,29.658l13-13,13,13A1.172,1.172,0,1,0,29.657,28Z" transform="translate(0 -0.001)" fill="#24272d"/>
+            </g>
+          </g>
+        </svg></button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu__nav">
+      <ul>
+        <li><a href="#">Каталог курсов </a> <div class="mobile-menu__indicator"></div></li>
+        <li><a href="#">Ваканси </a> <div class="mobile-menu__indicator"></div></li>
+        <li><a href="#">сравнит </a> <div class="mobile-menu__indicator"></div></li>
+      </ul>
+    </nav>
+
+  </header>
+
   <header class="header">
-    <div class="top-bar" aria-label="Приложение Sokrat">
+    <div class="top-bar">
       <div class="top-bar__container container">
         <p class="top-bar__content">
           Ищите знания<br>
           в приложении Sokrat.
         </p>
-        <a href="#" class="btn btn--pink">Скачать</a>
+        <a href="#" class="btn btn--pink" id="app">Скачать</a>
       </div>
     </div>
     <div class="header__wrapper">
       <div class="header__inner-wrapper">
         <a class="logo" href="index.html">
-          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="Логотип Sokrat">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
         </a>
         <div class="search search--hidden">
           <form class="search__form" role="search" method="get" id="search__form-header" action="#">
@@ -101,10 +129,15 @@
           <div class="user__search" id="search">
             <img src="img/search-icon.svg" alt="" class="user__search-img" width="31" height="20">
           </div>
+           <button class="main-nav__toggle" type="button">
+        <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
+      </button>
+      <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
         </div>
       </div>
     </div>
-    <div class="main-nav main-nav--closed" aria-label="Навигация по сайту">
+
+    <!-- <div class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
       </button>
@@ -114,7 +147,7 @@
             <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Каталог курсов</a>
+            <a href="#" class="main-nav__link">Все курсы</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Вакансии</a>
@@ -125,8 +158,11 @@
         </ul>
       </nav>
       <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
-    </div>
+    </div> -->
+
   </header>
+
+
   <main class="main">
     <header class="page-header page-header--courses" aria-label="Все курсы">
       <div class="page-header__plug-img"></div>

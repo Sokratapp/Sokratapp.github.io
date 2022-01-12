@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: max-content 1fr;
 
+    margin-top: 20px;
     margin-bottom: 9px;
 
     font-size: 15px;
@@ -125,6 +126,7 @@
 .review__text {
   margin-top: 0;
   margin-bottom: 0;
+  word-wrap: break-word;
 
   font-size: 11px;
   line-height: 16px;
