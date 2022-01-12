@@ -64,6 +64,17 @@ let swiperTeacher = new Swiper('.teacher__list',{
     }
   }
 });
+let teacherItemMobile  = new Swiper('.teacher__list__mobile ', {
+  direction: 'horizontal',
+  slidesPerView: 1.2,
+  slidesPerColumn: 3,
+  // loop: true,
+
+  spaceBetween: 20,
+  slidesPerColumnFill: 'row',
+ 
+  
+});
  
 let courseProgrammList  = new Swiper('.course__programm-list ', {
   direction: 'horizontal',

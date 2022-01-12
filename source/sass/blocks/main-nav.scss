@@ -92,7 +92,6 @@
   display: none;
 
   @media (max-width: $mobile) {
-  position: absolute;
   top: 19px;
   right: 10px;
   z-index: 2;
@@ -172,8 +171,8 @@
 @media (max-width: $mobile) {
   position: absolute;
   display: inline;
-  top: -4px;
-  right: 8px;
+  top: 2px;
+  right: 16px;
   width: 14px;
   height: 14px;
   z-index: 8;

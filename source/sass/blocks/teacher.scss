@@ -28,7 +28,15 @@
   @include list-reset;
 
   @media (max-width: $mobile) {
+    display: none;
     flex-direction: column;
+  }
+  &__mobile{
+    display: none;
+    @media (max-width: $mobile) {
+      display: block;
+      
+    }
   }
 }
 
