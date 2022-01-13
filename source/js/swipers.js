@@ -94,10 +94,6 @@ let skillsList = new Swiper('.skills__list',{
   slidesPerColumn: 3,
   spaceBetween: 15,
  
-
-  mousewheel: {
-    sensitiviti: 1,
-  }
 });
 
 let reviewList = new Swiper('.review__list', {

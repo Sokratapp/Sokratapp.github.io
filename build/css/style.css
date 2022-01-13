@@ -1350,7 +1350,7 @@ img {
     position: absolute;
     content: "";
     right: 5.5px;
-    bottom: 33px;
+    bottom: 15px;
     display: none;
     width: 12px;
     height: 12px;
@@ -2473,13 +2473,15 @@ img {
       grid-template-areas: "info         ." "sidebar      sidebar" "skills-hard   skills-hard" "skills-soft   skills-soft" "payment      payment"; } }
 
 .practice__skills-hard {
-  grid-area: skills-hard; }
+  grid-area: skills-hard;
+  width: 100%; }
   @media (max-width: 768px) {
     .practice__skills-hard {
       width: 100%; } }
 
 .practice__skills-soft {
-  grid-area: skills-soft; }
+  grid-area: skills-soft;
+  width: 100%; }
   @media (max-width: 768px) {
     .practice__skills-soft {
       width: 100%; } }
@@ -4364,13 +4366,15 @@ img {
       grid-template-areas: "info         ." "sidebar      sidebar" "skills-hard   skills-hard" "skills-soft   skills-soft" "payment      payment"; } }
 
 .practice__skills-hard {
-  grid-area: skills-hard; }
+  grid-area: skills-hard;
+  width: 100%; }
   @media (max-width: 768px) {
     .practice__skills-hard {
       width: 100%; } }
 
 .practice__skills-soft {
-  grid-area: skills-soft; }
+  grid-area: skills-soft;
+  width: 100%; }
   @media (max-width: 768px) {
     .practice__skills-soft {
       width: 100%; } }

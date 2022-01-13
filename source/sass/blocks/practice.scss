@@ -39,6 +39,7 @@
 
 .practice__skills-hard {
   grid-area: skills-hard;
+  width: 100%;
 
   @media (max-width: $mobile) {
     width: 100%;
@@ -47,6 +48,7 @@
 
 .practice__skills-soft {
   grid-area: skills-soft;
+  width: 100%;
 
   @media (max-width: $mobile) {
     width: 100%;

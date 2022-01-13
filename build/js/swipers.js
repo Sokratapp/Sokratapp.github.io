@@ -66,7 +66,7 @@ let swiperTeacher = new Swiper('.teacher__list',{
 });
 let teacherItemMobile  = new Swiper('.teacher__list__mobile ', {
   direction: 'horizontal',
-  slidesPerView: 1.2,
+  slidesPerView: 1.3,
   slidesPerColumn: 3,
   // loop: true,
 
@@ -94,10 +94,6 @@ let skillsList = new Swiper('.skills__list',{
   slidesPerColumn: 3,
   spaceBetween: 15,
  
-
-  mousewheel: {
-    sensitiviti: 1,
-  }
 });
 
 let reviewList = new Swiper('.review__list', {
