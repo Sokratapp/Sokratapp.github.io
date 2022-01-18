@@ -10,13 +10,17 @@ body {
   line-height: 26px;
   overflow-x: hidden;
   color: $black;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; // элементы выстроятся в колонку
+  justify-content: space-between; //первый и последний будет сверху и снизу экрана
 }
 
 img {
   width: 100%;
   height: auto;
 }
-
 
 .indicator {
   position: absolute;
