@@ -1,6 +1,7 @@
 .footer {
   padding-top: 80px;
   background-color: $bg-light;
+  margin-top: auto;
 
   @media (max-width: $mobile) {
     padding-top: 0;

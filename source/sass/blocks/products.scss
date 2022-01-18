@@ -6,7 +6,7 @@
   list-style: none;
 
   @media (min-width: $mobile) {
-    justify-content: start;
+    // justify-content: start;
     grid-template-columns: repeat(auto-fill, 325px);
     row-gap: 24px;
     column-gap: 20px;
@@ -21,6 +21,7 @@
 
 .products__item {
   padding: 22px 22px 3px;
+  position: relative;
 
   border-radius: 10px;
   box-shadow: 0 0 29px rgba($black, 0.2);
@@ -79,31 +80,31 @@
 
 .products__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 
   font: 500 19px/23px $body-font-family;
 
   @media (min-width: $desktop) {
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
   }
 
   &--courses {
-    margin-bottom: 29px;
+    // margin-bottom: 29px;
 
     @media (min-width: $desktop) {
-      margin-bottom: 24px;
+      // margin-bottom: 24px;
     }
   }
 }
 
 .products__description {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 60px;
 
   font: 400 15px/18px $body-font-family;
 
   @media (min-width: $desktop) {
-    margin-bottom: 29px;
+    // margin-bottom: 29px;
   }
 }
 
@@ -111,9 +112,12 @@
   justify-content: center;
   width: 100%;
   margin-top: auto;
-  margin-bottom: 19px;
+  margin-bottom: 8px;
   padding-top: 9px;
   padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 280px;
 
   font: 500 15px/20px $body-font-family;
 

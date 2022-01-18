@@ -41,12 +41,15 @@
   }
 }
 
+.swiper-slide{
+  height: auto;
+}
 .carousel__item {
   display: flex;
   flex-direction: column;
   width: 325px;
   padding: 25px 21px 7px;
-
+  height: auto !important;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(#000000, 0.1);
 
