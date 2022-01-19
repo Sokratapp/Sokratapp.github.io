@@ -3953,7 +3953,7 @@ img {
 
 .popup-compare__item {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr 50px;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
@@ -4048,6 +4048,26 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.popup-compare__del {
+  width: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .popup-compare__del svg {
+    fill: #EF4864; }
+
+.popup-compare__del:hover svg {
+  fill: #f00;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
 
 .popup-promotion {
   position: fixed;
