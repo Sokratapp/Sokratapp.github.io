@@ -9,7 +9,7 @@
   justify-content: center;
 
   background-color: rgba($bg-light, 0.6);
-  
+
   z-index: 11;
 }
 
@@ -119,7 +119,6 @@
     background-image: linear-gradient(to bottom, transparent 45%, $black 45%, $black 55%, transparent 55%);
   }
 
-
   &::-webkit-scrollbar-thumb {
     background-color: $main-color;
     border-radius: 10px;
@@ -128,7 +127,8 @@
 
 .popup-compare__item {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  // grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr 50px;
   column-gap: 10px;
   row-gap: 11px;
   padding-top: 26px;
@@ -219,4 +219,22 @@
 
 .popup-compare__btn {
   justify-content: center;
+}
+
+.popup-compare__del {
+  width: 56px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  transition: all .3s;
+  svg {
+    fill: $accent-color;
+  }
+}
+.popup-compare__del:hover svg {
+  fill: #f00;
+  cursor: pointer;
+  transition: all .3s;
 }
