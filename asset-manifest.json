@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.086f6023.chunk.css",
+    "main.js": "/static/js/main.625b32e1.chunk.js",
+    "main.js.map": "/static/js/main.625b32e1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ddf51a3f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ddf51a3f.js.map",
+    "static/css/2.91890665.chunk.css": "/static/css/2.91890665.chunk.css",
+    "static/js/2.0f858942.chunk.js": "/static/js/2.0f858942.chunk.js",
+    "static/js/2.0f858942.chunk.js.map": "/static/js/2.0f858942.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.91890665.chunk.css.map": "/static/css/2.91890665.chunk.css.map",
+    "static/css/main.086f6023.chunk.css.map": "/static/css/main.086f6023.chunk.css.map",
+    "static/js/2.0f858942.chunk.js.LICENSE.txt": "/static/js/2.0f858942.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/search-icon.3f5f1223.svg",
+    "static/media/app-store-btn.ce77beb7.svg": "/static/media/app-store-btn.ce77beb7.svg",
+    "static/media/camera-icon.eca41c97.svg": "/static/media/camera-icon.eca41c97.svg",
+    "static/media/default-trumb.088b808f.png": "/static/media/default-trumb.088b808f.png",
+    "static/media/empty-certificate.b0983de2.svg": "/static/media/empty-certificate.b0983de2.svg",
+    "static/media/google-play-btn.4f134dd4.svg": "/static/media/google-play-btn.4f134dd4.svg",
+    "static/media/huawei-btn.2416d320.svg": "/static/media/huawei-btn.2416d320.svg",
+    "static/media/menu.b5337cf1.svg": "/static/media/menu.b5337cf1.svg",
+    "static/media/page-header-1.2e661719.png": "/static/media/page-header-1.2e661719.png",
+    "static/media/page-header-2.4b9b2780.svg": "/static/media/page-header-2.4b9b2780.svg",
+    "static/media/page-header-3.ae03c040.svg": "/static/media/page-header-3.ae03c040.svg",
+    "static/media/slogan-2.f3804a01.svg": "/static/media/slogan-2.f3804a01.svg",
+    "static/media/slogan-3.84571351.png": "/static/media/slogan-3.84571351.png",
+    "static/media/sokrat-logo.2e918e69.svg": "/static/media/sokrat-logo.2e918e69.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ddf51a3f.js",
+    "static/css/2.91890665.chunk.css",
+    "static/js/2.0f858942.chunk.js",
+    "static/css/main.086f6023.chunk.css",
+    "static/js/main.625b32e1.chunk.js"
+  ]
+}
